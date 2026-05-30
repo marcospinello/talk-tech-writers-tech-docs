@@ -31,9 +31,18 @@ style: |
       margin: 0.6em 0;
       line-height: 1.25;
     }
+    .manifesto ol {
+      font-size: 1.4em;
+      font-weight: 600;
+      margin: 0.6em 0;
+      line-height: 1.25;
+    }
+    .manifesto li {
+      margin: 0.25em 0;
+    }
 ---
 
-<!-- markdownlint-disable MD026 -->
+<!-- markdownlint-disable MD026 because slides use question-mark headings as prompts. -->
 
 <!-- _class: lead -->
 
