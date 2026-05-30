@@ -1,0 +1,23 @@
+.DS_Store
+*.log
+node_modules
+dist
+.idea
+
+.npmrc
+
+# Dolt database files (added by bd init)
+.dolt/
+*.db
+
+# Vale packages (managed by `vale sync` via .vale.ini Packages)
+.vale.ini
+.vale-config/
+vale-styles/
+vale-styles/**
+
+# Claude Code
+.claude/settings.local.json
+.claude/projects/
+.remember/tmp/
+.superpowers/
