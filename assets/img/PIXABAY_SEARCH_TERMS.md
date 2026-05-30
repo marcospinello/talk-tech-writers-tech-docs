@@ -9,7 +9,7 @@ in `assets/img/ATTRIBUTION.md`.
 Save selected files into `assets/img/` using the exact target filenames below.
 Use JPEG for photographic images and PNG only for graphics or transparency.
 
-| Target file | Intended usage | Search terms | AI-first search URL | Fallback search URL | Placeholder image URL | Notes |
+| Target file | Intended usage | Search terms | AI-first search URL | Fallback search URL | Placeholder or search URL | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | `title-curious-cat.jpg` | Title slide | curious cat laptop, cat computer, student cat laptop | <https://pixabay.com/images/search/curious%20cat%20laptop/?content_type=ai> | <https://pixabay.com/images/search/curious%20cat%20laptop/> | <https://pixabay.com/illustrations/ai-generated-cat-laptop-work-9405132/> | Known relevant AI-generated candidate: curious cat working on a laptop. |
 | `travel-platform.jpg` | Travel-tech setting | travel technology platform, online booking technology, digital travel map | <https://pixabay.com/images/search/travel%20technology%20platform/?content_type=ai> | <https://pixabay.com/images/search/travel%20technology%20platform/> | <https://pixabay.com/images/search/travel%20technology%20platform/?content_type=ai> | Prefer an image that suggests travel plus software, not a generic vacation photo. |
@@ -29,5 +29,5 @@ Use JPEG for photographic images and PNG only for graphics or transparency.
    watermarks, brands, or real company UI.
 3. If no AI-generated image works, open the fallback search URL.
 4. Save the selected image into `assets/img/` with the exact target filename.
-5. Add the exact Pixabay image page URL and creator name to
+5. Add the exact Pixabay image page URL, creator name, and AI/non-AI note to
    `assets/img/ATTRIBUTION.md`.

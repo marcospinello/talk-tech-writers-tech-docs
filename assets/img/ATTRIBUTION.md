@@ -2,8 +2,8 @@
 
 Images in this folder are used as local assets for the Marp deck.
 
-Pixabay images should be used under the Pixabay Content License. Attribution is
-not required by Pixabay, but this file tracks provenance for maintainability and
+Use selected Pixabay images under the Pixabay Content License. Attribution is not
+required by Pixabay, but this file tracks provenance for maintainability and
 review.
 
 ## Current Assets
