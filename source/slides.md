@@ -70,24 +70,69 @@ style: |
       width: 50%;
       padding: 0.35em 0.6em;
     }
-    .map-grid {
+    .map-overview {
       display: grid;
-      grid-template-columns: 0.82fr 1fr 0.72fr 0.88fr 0.68fr 1.15fr;
-      gap: 2px;
-      margin-top: 0.7em;
-      font-size: 0.54em;
-      line-height: 1.12;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.42em;
+      margin-top: 0.55em;
     }
-    .map-cell {
+    .map-card {
       min-height: 2.7em;
-      padding: 0.32em 0.36em;
+      padding: 0.42em 0.6em;
+      border-left: 6px solid #8be9fd;
+      border-radius: 8px;
       background: #44475a;
       color: #f8f8f2;
     }
-    .map-head {
-      min-height: 2em;
+    .map-source {
       color: #f1fa8c;
+      font-size: 0.72em;
       font-weight: 800;
+      line-height: 1.15;
+    }
+    .map-action {
+      margin-top: 0.18em;
+      color: #8be9fd;
+      font-size: 0.9em;
+      line-height: 1.18;
+    }
+    .map-lesson {
+      margin-top: 0.35em;
+      color: #f8f8f2;
+      font-size: 0.76em;
+      line-height: 1.2;
+    }
+    .map-zoom {
+      margin-top: 0.65em;
+      padding: 0.7em;
+      border-radius: 8px;
+      background: #44475a;
+    }
+    .map-zoom-title {
+      color: #f1fa8c;
+      font-size: 1.05em;
+      font-weight: 800;
+    }
+    .map-zoom-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.45em;
+      margin-top: 0.55em;
+    }
+    .map-field {
+      padding: 0.45em;
+      border-radius: 6px;
+      background: #282a36;
+      font-size: 0.78em;
+      line-height: 1.15;
+    }
+    .map-field-name {
+      color: #ff79c6;
+      font-weight: 800;
+    }
+    .map-field-value {
+      margin-top: 0.16em;
+      color: #f8f8f2;
     }
     .page-excerpt {
       margin-top: 1em;
@@ -100,34 +145,76 @@ style: |
       line-height: 1.36;
     }
     .page-sample {
-      padding: 0.65em 0.75em;
+      margin-top: 0.45em;
+      padding: 0.62em 0.75em;
       border-radius: 8px;
       background: #f8f8f2;
       color: #282a36;
-      font-size: 0.58em;
-      line-height: 1.18;
+      font-size: 0.72em;
+      line-height: 1.16;
     }
     .page-title {
-      margin-bottom: 0.3em;
       color: #282a36;
       font-size: 1.35em;
       font-weight: 800;
     }
     .page-lede {
-      margin-bottom: 0.45em;
+      margin-top: 0.22em;
+      color: #44475a;
+      font-size: 0.8em;
+      line-height: 1.18;
     }
     .page-grid {
       display: grid;
-      grid-template-columns: 0.9fr 1.2fr;
-      gap: 0.35em 1em;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 0.45em;
+      margin-top: 0.55em;
+    }
+    .page-card {
+      padding: 0.48em 0.55em;
+      border-left: 5px solid #bd93f9;
+      border-radius: 6px;
+      background: #ffffff;
     }
     .page-heading {
-      margin-top: 0.15em;
       color: #bd93f9;
+      font-size: 0.88em;
       font-weight: 800;
     }
     .page-line {
-      margin-top: 0.08em;
+      margin-top: 0.15em;
+      font-size: 0.78em;
+      line-height: 1.18;
+    }
+    .page-step {
+      margin-top: 0.12em;
+      font-size: 0.76em;
+      line-height: 1.15;
+    }
+    .page-zoom-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.7em;
+      margin-top: 0.85em;
+    }
+    .page-zoom-card {
+      min-height: 5.1em;
+      padding: 0.72em;
+      border-left: 6px solid #8be9fd;
+      border-radius: 8px;
+      background: #44475a;
+      color: #f8f8f2;
+      font-size: 0.78em;
+      line-height: 1.2;
+    }
+    .page-zoom-title {
+      color: #f1fa8c;
+      font-size: 1.05em;
+      font-weight: 800;
+      line-height: 1.15;
+    }
+    .page-zoom-text {
+      margin-top: 0.35em;
     }
 ---
 
@@ -370,57 +457,86 @@ Explain the move from collecting sources to organizing them. In the TravelCo cas
 
 ---
 
-<!-- _class: dense docs-map -->
-
 ## The docs map
 
-<div class="map-grid">
-  <div class="map-cell map-head">Source</div>
-  <div class="map-cell map-head">What it explains</div>
-  <div class="map-cell map-head">Audience</div>
-  <div class="map-cell map-head">Owner</div>
-  <div class="map-cell map-head">Freshness</div>
-  <div class="map-cell map-head">Action</div>
-  <div class="map-cell">GitLab issue</div>
-  <div class="map-cell">Auth setup change</div>
-  <div class="map-cell">Engineers</div>
-  <div class="map-cell">Partner Integrations</div>
-  <div class="map-cell">Recent</div>
-  <div class="map-cell">Keep as source of truth</div>
-  <div class="map-cell">Confluence page</div>
-  <div class="map-cell">Onboarding flow</div>
-  <div class="map-cell">Partners</div>
-  <div class="map-cell">Docs team</div>
-  <div class="map-cell">8 months old</div>
-  <div class="map-cell">Merge into onboarding guide</div>
-  <div class="map-cell">Drive sheet</div>
-  <div class="map-cell">Partner fields</div>
-  <div class="map-cell">Ops</div>
-  <div class="map-cell">Unknown</div>
-  <div class="map-cell">Unclear</div>
-  <div class="map-cell">Ask owner to verify</div>
-  <div class="map-cell">Slack thread</div>
-  <div class="map-cell">Sandbox exception</div>
-  <div class="map-cell">Support</div>
-  <div class="map-cell">Engineer</div>
-  <div class="map-cell">Recent</div>
-  <div class="map-cell">Rewrite as task steps</div>
-  <div class="map-cell">PDF checklist</div>
-  <div class="map-cell">Old checklist</div>
-  <div class="map-cell">Partners</div>
-  <div class="map-cell">Unknown</div>
-  <div class="map-cell">Stale</div>
-  <div class="map-cell">Archive as outdated</div>
-  <div class="map-cell">Human memory</div>
-  <div class="map-cell">Removed step</div>
-  <div class="map-cell">Writers</div>
-  <div class="map-cell">Engineer</div>
-  <div class="map-cell">Current</div>
-  <div class="map-cell">Link as supporting reference</div>
+<div class="map-overview">
+  <div class="map-card">
+    <div class="map-source">GitLab issue</div>
+    <div class="map-action">Keep as source of truth</div>
+  </div>
+  <div class="map-card">
+    <div class="map-source">Confluence page</div>
+    <div class="map-action">Merge into onboarding guide</div>
+  </div>
+  <div class="map-card">
+    <div class="map-source">Drive sheet</div>
+    <div class="map-action">Ask owner to verify</div>
+  </div>
+  <div class="map-card">
+    <div class="map-source">Slack thread</div>
+    <div class="map-action">Rewrite as task steps</div>
+  </div>
+  <div class="map-card">
+    <div class="map-source">PDF checklist</div>
+    <div class="map-action">Archive as outdated</div>
+  </div>
+  <div class="map-card">
+    <div class="map-source">Human memory</div>
+    <div class="map-action">Link as supporting reference</div>
+  </div>
+</div>
+
+<div class="map-lesson">The map is not a dumping ground. Every fragment gets a decision.</div>
+
+<!--
+Walk through the map as an editorial decision tool, not a final navigation menu. Explain that the visible slide shows the key decision for each fragment so the audience can read it from the back of the room.
+
+Full docs map:
+Source | What it explains | Audience | Owner | Freshness | Action
+GitLab issue | Auth setup change | Engineers | Partner Integrations | Recent | Keep as source of truth
+Confluence page | Onboarding flow | Partners | Docs team | 8 months old | Merge into onboarding guide
+Drive sheet | Partner fields | Ops | Unknown | Unclear | Ask owner to verify
+Slack thread | Sandbox exception | Support | Engineer | Recent | Rewrite as task steps
+PDF checklist | Old checklist | Partners | Unknown | Stale | Archive as outdated
+Human memory | Removed step | Writers | Engineer | Current | Link as supporting reference
+-->
+
+---
+
+## Docs map zoom: one row
+
+<div class="map-zoom">
+  <div class="map-zoom-title">GitLab issue</div>
+  <div class="map-zoom-grid">
+    <div class="map-field">
+      <div class="map-field-name">What it explains</div>
+      <div class="map-field-value">Auth setup change</div>
+    </div>
+    <div class="map-field">
+      <div class="map-field-name">Audience</div>
+      <div class="map-field-value">Engineers</div>
+    </div>
+    <div class="map-field">
+      <div class="map-field-name">Owner</div>
+      <div class="map-field-value">Partner Integrations</div>
+    </div>
+    <div class="map-field">
+      <div class="map-field-name">Freshness</div>
+      <div class="map-field-value">Recent</div>
+    </div>
+    <div class="map-field">
+      <div class="map-field-name">Action</div>
+      <div class="map-field-value">Keep as source of truth</div>
+    </div>
+    <div class="map-field">
+      <div class="map-field-name">Decision</div>
+      <div class="map-field-value">Use this to verify the new setup behavior.</div>
+    </div>
+  </div>
 </div>
 
 <!--
-Walk through the map as an editorial decision tool, not a final navigation menu. Explain how each row gives a fragment a purpose, audience, owner, freshness signal, and action. Tie the decisions to TravelCo's journey from first contact to production launch.
+Use this zoom slide to show the columns behind the overview: Source, What it explains, Audience, Owner, Freshness, and Action. Explain that every row in the full map answers the same questions, but the live slide does not need to show every row and column at once.
 -->
 
 ---
@@ -457,36 +573,34 @@ Describe how this page technically contains information but still fails the read
 
 ---
 
-<!-- _class: dense -->
-
 ## Better docs page
 
 <div class="page-sample">
-  <div class="page-title"># Set up a partner sandbox account</div>
+  <div class="page-title">Set up a partner sandbox account</div>
   <div class="page-lede">Use this guide when a new travel partner needs sandbox access before production onboarding.</div>
   <div class="page-grid">
-    <div>
-      <div class="page-heading">## Before you start</div>
+    <div class="page-card">
+      <div class="page-heading">Before you start</div>
       <div class="page-line">- Partner contract is approved.</div>
       <div class="page-line">- Partner ID exists in Partner Admin.</div>
       <div class="page-line">- You can access the sandbox environment.</div>
     </div>
-    <div>
-      <div class="page-heading">## Steps</div>
-      <div class="page-line">1. Create the partner sandbox account in Partner Admin.</div>
-      <div class="page-line">2. Add the required contact and billing fields.</div>
-      <div class="page-line">3. Enable sandbox API access.</div>
-      <div class="page-line">4. Send the sandbox credentials through the approved secure channel.</div>
-      <div class="page-line">5. Ask the partner to complete a test booking flow.</div>
+    <div class="page-card">
+      <div class="page-heading">Steps</div>
+      <div class="page-step">1. Create the sandbox account in Partner Admin.</div>
+      <div class="page-step">2. Add contact and billing fields.</div>
+      <div class="page-step">3. Enable sandbox API access.</div>
+      <div class="page-step">4. Send credentials securely.</div>
+      <div class="page-step">5. Ask the partner to test booking.</div>
     </div>
-    <div>
-      <div class="page-heading">## Verify setup</div>
+    <div class="page-card">
+      <div class="page-heading">Verify setup</div>
       <div class="page-line">- Partner can authenticate successfully.</div>
       <div class="page-line">- Test booking returns a sandbox confirmation ID.</div>
       <div class="page-line">- No production inventory is affected.</div>
     </div>
-    <div>
-      <div class="page-heading">## Owner and freshness</div>
+    <div class="page-card">
+      <div class="page-heading">Owner and freshness</div>
       <div class="page-line">- Owner: Partner Integrations.</div>
       <div class="page-line">- Last reviewed: 2026-05-30.</div>
       <div class="page-line">- Source of truth: Partner onboarding runbook.</div>
@@ -495,7 +609,57 @@ Describe how this page technically contains information but still fails the read
 </div>
 
 <!--
-Show what better structure looks like in the same case. Explain that the content is not necessarily longer; it is arranged around the partner's workflow. Point out that prerequisites, validation, ownership, freshness, and the source of truth are part of the user journey, not afterthoughts.
+Show what better structure looks like in the same case. Explain that this is a rendered-page mockup, not raw Markdown source. The slide compresses some line wording for live readability, while the complete model remains in these notes.
+
+Full improved page model:
+# Set up a partner sandbox account
+
+Use this guide when a new travel partner needs sandbox access before production onboarding.
+
+## Before you start
+- Partner contract is approved.
+- Partner ID exists in Partner Admin.
+- You can access the sandbox environment.
+
+## Steps
+1. Create the partner sandbox account in Partner Admin.
+2. Add the required contact and billing fields.
+3. Enable sandbox API access.
+4. Send the sandbox credentials through the approved secure channel.
+5. Ask the partner to complete a test booking flow.
+
+## Verify setup
+- Partner can authenticate successfully.
+- Test booking returns a sandbox confirmation ID.
+- No production inventory is affected.
+
+## Owner and freshness
+- Owner: Partner Integrations.
+- Last reviewed: 2026-05-30.
+- Source of truth: Partner onboarding runbook.
+-->
+
+---
+
+## Better docs page: zoom
+
+<div class="page-zoom-grid">
+  <div class="page-zoom-card">
+    <div class="page-zoom-title">Task first</div>
+    <div class="page-zoom-text">The title names the exact job: set up a sandbox account.</div>
+  </div>
+  <div class="page-zoom-card">
+    <div class="page-zoom-title">Proof of done</div>
+    <div class="page-zoom-text">The verify section tells readers how to know the setup worked.</div>
+  </div>
+  <div class="page-zoom-card">
+    <div class="page-zoom-title">Trust signals</div>
+    <div class="page-zoom-text">Owner, review date, and source of truth make the page safer to use.</div>
+  </div>
+</div>
+
+<!--
+Use this zoom slide to make the design lesson explicit after the page mockup. The improved page works because it starts with the task, shows prerequisites early, separates setup from verification, and ends with ownership and freshness signals.
 -->
 
 ---
