@@ -40,9 +40,98 @@ style: |
     .manifesto li {
       margin: 0.25em 0;
     }
+    .dense {
+      font-size: 24px;
+    }
+    .dense h2 {
+      margin-bottom: 0.45em;
+    }
+    .source-board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.55em;
+      margin-top: 0.8em;
+    }
+    .source-card {
+      min-height: 4.8em;
+      padding: 0.75em;
+      border-left: 6px solid #8be9fd;
+      border-radius: 8px;
+      background: #44475a;
+      color: #f8f8f2;
+      font-size: 0.72em;
+      line-height: 1.25;
+    }
+    .question-checklist table {
+      font-size: 0.9em;
+      line-height: 1.25;
+    }
+    .question-checklist table td {
+      width: 50%;
+      padding: 0.35em 0.6em;
+    }
+    .map-grid {
+      display: grid;
+      grid-template-columns: 0.82fr 1fr 0.72fr 0.88fr 0.68fr 1.15fr;
+      gap: 2px;
+      margin-top: 0.7em;
+      font-size: 0.54em;
+      line-height: 1.12;
+    }
+    .map-cell {
+      min-height: 2.7em;
+      padding: 0.32em 0.36em;
+      background: #44475a;
+      color: #f8f8f2;
+    }
+    .map-head {
+      min-height: 2em;
+      color: #f1fa8c;
+      font-weight: 800;
+    }
+    .page-excerpt {
+      margin-top: 1em;
+      padding: 0.9em 1em;
+      border-left: 6px solid #ff5555;
+      border-radius: 8px;
+      background: #44475a;
+      color: #f8f8f2;
+      font-size: 0.86em;
+      line-height: 1.36;
+    }
+    .page-sample {
+      padding: 0.65em 0.75em;
+      border-radius: 8px;
+      background: #f8f8f2;
+      color: #282a36;
+      font-size: 0.58em;
+      line-height: 1.18;
+    }
+    .page-title {
+      margin-bottom: 0.3em;
+      color: #282a36;
+      font-size: 1.35em;
+      font-weight: 800;
+    }
+    .page-lede {
+      margin-bottom: 0.45em;
+    }
+    .page-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.2fr;
+      gap: 0.35em 1em;
+    }
+    .page-heading {
+      margin-top: 0.15em;
+      color: #bd93f9;
+      font-weight: 800;
+    }
+    .page-line {
+      margin-top: 0.08em;
+    }
 ---
 
-<!-- markdownlint-disable MD026 because slides use question-mark headings as prompts. -->
+<!-- markdownlint-disable MD026 MD033 because slides use prompts and Marp HTML layouts. -->
 
 <!-- _class: lead -->
 
@@ -119,14 +208,17 @@ Make the question sound simple on purpose. Explain that partners often ask direc
 
 ## The answer is everywhere
 
-- Email threads
-- API docs
-- Slack messages
-- Tickets
-- Meeting notes
+<div class="source-board">
+  <div class="source-card">GitLab issue: auth setup changed after partner sandbox migration.</div>
+  <div class="source-card">Confluence page: onboarding guide last updated eight months ago.</div>
+  <div class="source-card">Google Drive doc: spreadsheet with partner fields and unclear owners.</div>
+  <div class="source-card">Slack thread: engineer explains one exception in a thread nobody will find later.</div>
+  <div class="source-card">PDF: old partner checklist still linked from an internal page.</div>
+  <div class="source-card">Human memory: one engineer knows which setup step is no longer required.</div>
+</div>
 
 <!--
-Walk through the sources where the answer may be hiding. Explain that none of these sources are bad by themselves, but together they create a maze. Tie the pain back to the partner who needs one next step, not a tour of internal history.
+Walk through the source board as the messy input for the case study. Explain that none of these fragments are bad by themselves, but together they create a maze: recent behavior in GitLab, stale guidance in Confluence, unclear spreadsheet ownership, a Slack exception, an old PDF, and one person's memory. Tie the pain back to the partner who needs one next step, not a tour of internal history.
 -->
 
 ---
@@ -177,14 +269,19 @@ Land the first section with a clear mental model. Explain that good docs are not
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: dense question-checklist -->
 
 ## Better questions
 
-Before writing, find the reader, task, truth, owner, and change.
+| Ask before drafting | Ask before publishing |
+| --- | --- |
+| Who is the reader? | Who can verify it? |
+| What job are they trying to complete? | What changed recently? |
+| What do they already know? | What happens if the doc is wrong? |
+| Where does the current truth live? | What can we delete or archive? |
 
 <!--
-Transition from diagnosing the problem to a practical working method. Explain that better docs start with better discovery questions. Tell the audience these questions reduce ambiguity before anyone starts drafting.
+Transition from diagnosing the problem to a practical working method. Explain that better docs start with better discovery questions. Tell the audience this checklist reduces ambiguity before anyone starts drafting and keeps the later review focused on truth, risk, and maintenance.
 -->
 
 ---
@@ -273,17 +370,57 @@ Explain the move from collecting sources to organizing them. In the TravelCo cas
 
 ---
 
+<!-- _class: dense docs-map -->
+
 ## The docs map
 
-- Start here
-- Requirements
-- Setup
-- Testing
-- Go-live checklist
-- Support path
+<div class="map-grid">
+  <div class="map-cell map-head">Source</div>
+  <div class="map-cell map-head">What it explains</div>
+  <div class="map-cell map-head">Audience</div>
+  <div class="map-cell map-head">Owner</div>
+  <div class="map-cell map-head">Freshness</div>
+  <div class="map-cell map-head">Action</div>
+  <div class="map-cell">GitLab issue</div>
+  <div class="map-cell">Auth setup change</div>
+  <div class="map-cell">Engineers</div>
+  <div class="map-cell">Partner Integrations</div>
+  <div class="map-cell">Recent</div>
+  <div class="map-cell">Keep as source of truth</div>
+  <div class="map-cell">Confluence page</div>
+  <div class="map-cell">Onboarding flow</div>
+  <div class="map-cell">Partners</div>
+  <div class="map-cell">Docs team</div>
+  <div class="map-cell">8 months old</div>
+  <div class="map-cell">Merge into onboarding guide</div>
+  <div class="map-cell">Drive sheet</div>
+  <div class="map-cell">Partner fields</div>
+  <div class="map-cell">Ops</div>
+  <div class="map-cell">Unknown</div>
+  <div class="map-cell">Unclear</div>
+  <div class="map-cell">Ask owner to verify</div>
+  <div class="map-cell">Slack thread</div>
+  <div class="map-cell">Sandbox exception</div>
+  <div class="map-cell">Support</div>
+  <div class="map-cell">Engineer</div>
+  <div class="map-cell">Recent</div>
+  <div class="map-cell">Rewrite as task steps</div>
+  <div class="map-cell">PDF checklist</div>
+  <div class="map-cell">Old checklist</div>
+  <div class="map-cell">Partners</div>
+  <div class="map-cell">Unknown</div>
+  <div class="map-cell">Stale</div>
+  <div class="map-cell">Archive as outdated</div>
+  <div class="map-cell">Human memory</div>
+  <div class="map-cell">Removed step</div>
+  <div class="map-cell">Writers</div>
+  <div class="map-cell">Engineer</div>
+  <div class="map-cell">Current</div>
+  <div class="map-cell">Link as supporting reference</div>
+</div>
 
 <!--
-Walk through the intended destination for the onboarding information. Explain how each map item answers a reader need at a specific moment. Tie the order to TravelCo's journey from first contact to production launch.
+Walk through the map as an editorial decision tool, not a final navigation menu. Explain how each row gives a fragment a purpose, audience, owner, freshness signal, and action. Tie the decisions to TravelCo's journey from first contact to production launch.
 -->
 
 ---
@@ -310,26 +447,55 @@ Explain how the docs map becomes an actual page. In the TravelCo example, each s
 
 ## Bad docs page
 
-- Starts with internal history
-- Mixes setup and troubleshooting
-- Hides prerequisites
-- Ends without a next step
+<div class="page-excerpt">
+To set up a partner account, first make sure the partner is active and that all fields are configured correctly. Some partners may need sandbox access before production access. If something does not work, check with Integrations or ask in Slack. The process changed recently, so make sure you follow the latest steps.
+</div>
 
 <!--
-Describe the kind of page that technically contains information but still fails the reader. Tie each flaw to the TravelCo partner losing time or confidence. Keep this as a setup for the better page rather than a long critique.
+Describe how this page technically contains information but still fails the reader. It hides prerequisites, mixes setup with troubleshooting, names no owner, and points people toward Slack instead of a durable answer. Keep this as a setup for the better page rather than a long critique.
 -->
 
 ---
 
+<!-- _class: dense -->
+
 ## Better docs page
 
-- Starts with the task
-- Shows prerequisites early
-- Separates steps from reference
-- Ends with validation and support
+<div class="page-sample">
+  <div class="page-title"># Set up a partner sandbox account</div>
+  <div class="page-lede">Use this guide when a new travel partner needs sandbox access before production onboarding.</div>
+  <div class="page-grid">
+    <div>
+      <div class="page-heading">## Before you start</div>
+      <div class="page-line">- Partner contract is approved.</div>
+      <div class="page-line">- Partner ID exists in Partner Admin.</div>
+      <div class="page-line">- You can access the sandbox environment.</div>
+    </div>
+    <div>
+      <div class="page-heading">## Steps</div>
+      <div class="page-line">1. Create the partner sandbox account in Partner Admin.</div>
+      <div class="page-line">2. Add the required contact and billing fields.</div>
+      <div class="page-line">3. Enable sandbox API access.</div>
+      <div class="page-line">4. Send the sandbox credentials through the approved secure channel.</div>
+      <div class="page-line">5. Ask the partner to complete a test booking flow.</div>
+    </div>
+    <div>
+      <div class="page-heading">## Verify setup</div>
+      <div class="page-line">- Partner can authenticate successfully.</div>
+      <div class="page-line">- Test booking returns a sandbox confirmation ID.</div>
+      <div class="page-line">- No production inventory is affected.</div>
+    </div>
+    <div>
+      <div class="page-heading">## Owner and freshness</div>
+      <div class="page-line">- Owner: Partner Integrations.</div>
+      <div class="page-line">- Last reviewed: 2026-05-30.</div>
+      <div class="page-line">- Source of truth: Partner onboarding runbook.</div>
+    </div>
+  </div>
+</div>
 
 <!--
-Show what better structure looks like in the same case. Explain that the content is not necessarily longer; it is arranged around the partner's workflow. Point out that validation and support are part of the user journey, not afterthoughts.
+Show what better structure looks like in the same case. Explain that the content is not necessarily longer; it is arranged around the partner's workflow. Point out that prerequisites, validation, ownership, freshness, and the source of truth are part of the user journey, not afterthoughts.
 -->
 
 ---
@@ -418,20 +584,23 @@ Transition into AI without treating it as magic. Explain that AI does not remove
 
 ## Practical Claude workflow
 
-- Summarize source fragments
-- Compare against the docs map
-- Draft gap questions
-- Prepare review notes
+1. Ask Claude to summarize scattered source material.
+2. Ask Claude to list conflicts, missing owners, and stale claims.
+3. Ask Claude to propose a docs map.
+4. Ask a human expert to verify the proposed structure and claims.
+5. Use Claude to draft the first page from verified inputs.
+6. Review the draft for accuracy, audience fit, and missing caveats.
+7. Add metadata, source links, ownership, and freshness signals.
 
 <!--
-Describe a practical AI-assisted workflow for the onboarding case. Explain that Claude can help process fragments and reveal gaps, but the team still has to validate truth. Keep the workflow concrete enough that the audience can try it after the talk.
+Describe a practical AI-assisted workflow for the onboarding case. Explain that Claude can help process fragments, reveal gaps, propose structure, and draft from verified inputs, but the team still has to validate truth. Keep the workflow concrete enough that the audience can try it after the talk.
 -->
 
 ---
 
 ## AI finds gaps, not truth
 
-Use AI to improve questions, then verify with owners and sources.
+AI can help you move faster through the mess, but it cannot decide what is true unless the sources and humans around it make truth visible.
 
 <!--
 Set a clear boundary around AI usefulness. In the TravelCo example, AI can notice that a prerequisite appears in one source but not another, but it cannot decide which source is authoritative. Emphasize that verification remains a human and organizational responsibility.
