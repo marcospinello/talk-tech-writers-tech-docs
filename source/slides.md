@@ -338,7 +338,7 @@ style: |
 
 <!-- _class: lead -->
 
-## Tech docs for curious cats
+## Tech docs for curious cats 🐾
 
 Marco Spinello
 
@@ -354,7 +354,7 @@ Open with the promise that this is a practical talk, not a style lecture. Set th
 
 <!-- _class: lead -->
 
-## From messy notes to useful docs
+## From messy notes to useful docs 📝
 
 One messy onboarding story, five better questions, one usable docs system.
 
@@ -365,7 +365,7 @@ Frame the talk as a journey from scattered knowledge to a docs experience that h
 
 ---
 
-## What you will learn
+## What you will learn 🧭
 
 - See docs as more than pages
 - Ask better questions before writing
@@ -378,7 +378,7 @@ Preview the learning path in plain terms. Tell the audience that useful docs com
 
 ---
 
-## About me
+## About me 👋
 
 ![bg left:50%](../assets/img/about-me.jpg)
 
@@ -398,7 +398,7 @@ Give enough personal context to explain your point of view. Connect the non-CS b
 
 <div class="section-kicker">1 / Messy input</div>
 
-## TravelCo partner onboarding
+## TravelCo partner onboarding ✈️
 
 A new partner needs to connect, configure, test, and go live.
 
@@ -411,7 +411,7 @@ Introduce TravelCo as the running example. The partner's goal is practical: conn
 
 ---
 
-## The partner has a simple question
+## The partner has a simple question ❓
 
 "What do we need to do next?"
 
@@ -422,7 +422,7 @@ Make the question sound simple on purpose. Use it to show the gap between how re
 
 ---
 
-## The answer is everywhere
+## The answer is everywhere 🗂️
 
 <div class="source-board">
   <div class="source-card">GitLab issue: auth setup changed after partner sandbox migration.</div>
@@ -440,7 +440,7 @@ Walk through the source board as the messy input. None of these fragments are ba
 
 ---
 
-## (Too) many docs can hide the truth.
+## (Too) many docs can hide the truth 🔍
 
 A published page can still be stale, partial, or wrong.
 
@@ -451,7 +451,7 @@ Separate the existence of documentation from the reliability of documentation. A
 
 ---
 
-## Why this hurts humans
+## Why this hurts humans 😵‍💫
 
 - Readers lose time
 - Support teams repeat answers
@@ -464,7 +464,7 @@ Describe the human cost before the business cost. Unclear docs shift effort onto
 
 ---
 
-## Why this hurts companies
+## Why this hurts companies 💸
 
 - Slower onboarding
 - More support load
@@ -479,7 +479,7 @@ Translate the same problem into company impact. Every unclear answer becomes a c
 
 <!-- _class: lead -->
 
-## Takeaway: docs are a living map
+## Takeaway: docs are a living map 🗺️
 
 Pages are the visible part. \
 Decisions, owners, and updates make them work.
@@ -495,7 +495,7 @@ Land the first section with a clear mental model. Good docs are not only words o
 
 <div class="section-kicker">2 / Better questions</div>
 
-## Better questions
+## Better questions 🧰
 
 | Tool | Question |
 | --- | --- |
@@ -514,7 +514,7 @@ Transition from diagnosing the problem to a practical toolkit. These five questi
 
 <!-- _class: question-card -->
 
-## 1. Reader
+## 1. Reader 👤
 
 <div class="question-tool">
   <div class="question-panel">
@@ -538,7 +538,7 @@ Explain why "the user" is too broad to guide useful documentation. A named reade
 
 <!-- _class: question-card -->
 
-## 2. Job
+## 2. Job 🎯
 
 <div class="question-tool">
   <div class="question-panel">
@@ -562,7 +562,7 @@ Move from audience identity to audience intent. The page should support a job th
 
 <!-- _class: question-card -->
 
-## 3. Truth
+## 3. Truth 🔎
 
 <div class="question-tool">
   <div class="question-panel">
@@ -586,7 +586,7 @@ Explain that writers need to find the places where the answer is kept before wri
 
 <!-- _class: question-card -->
 
-## 4. Verifier
+## 4. Verifier ✅
 
 <div class="question-tool">
   <div class="question-panel">
@@ -610,7 +610,7 @@ Explain that a named verifier keeps documentation from becoming an orphaned snap
 
 <!-- _class: question-card -->
 
-## 5. Change
+## 5. Change 🔄
 
 <div class="question-tool">
   <div class="question-panel">
@@ -634,7 +634,7 @@ Explain that change is where documentation quietly breaks. Writers need clues th
 
 <!-- _class: lead -->
 
-## Takeaway: writing starts before writing
+## Takeaway: writing starts before writing ✏️
 
 Discovery is documentation work.
 
@@ -649,7 +649,7 @@ Validate the invisible work. Asking, mapping, and confirming are not delays befo
 
 <div class="section-kicker">3 / Better structure</div>
 
-## Better structure
+## Better structure 🧱
 
 Turn scattered answers into a map readers can follow.
 
@@ -662,7 +662,7 @@ Introduce structure as the next layer of usefulness. Once sources and owners are
 
 ---
 
-## From source sprawl to docs map
+## From source sprawl to docs map 🗺️
 
 Inventory the fragments before choosing the page shape.
 
@@ -673,7 +673,7 @@ Explain the move from collecting sources to organizing them. Mapping prevents th
 
 ---
 
-## The docs map
+## The docs map 🧭
 
 <div class="map-overview">
   <div class="map-card">
@@ -720,7 +720,7 @@ Human memory | Removed step | Writers | Engineer | Current | Link as supporting 
 
 ---
 
-## Docs map zoom: one row
+## Docs map zoom: one row 🔬
 
 <div class="map-zoom">
   <div class="map-zoom-title">GitLab issue</div>
@@ -759,7 +759,7 @@ Use this zoom slide to show the columns behind the overview: Source, What it exp
 
 ---
 
-## What to merge, move, rewrite, or delete
+## What to merge, move, rewrite, or delete 🧹
 
 Every fragment needs a content decision.
 
@@ -770,7 +770,7 @@ Explain that structure requires editorial judgment. Information can be merged, m
 
 ---
 
-## From map to page
+## From map to page 📄
 
 Design the page around the reader's next decision.
 
@@ -781,7 +781,7 @@ Explain how the docs map becomes an actual page. Each section should help the pa
 
 ---
 
-## Bad docs page
+## Bad docs page ⚠️
 
 <div class="page-excerpt">
 To set up a partner account, first make sure the partner is active and that all fields are configured correctly. Some partners may need sandbox access before production access. If something does not work, check with Integrations or ask in Slack. The process changed recently, so make sure you follow the latest steps.
@@ -794,7 +794,7 @@ Describe how this page technically contains information but still fails the read
 
 ---
 
-## Better docs page
+## Better docs page ✅
 
 <div class="page-sample">
   <div class="page-title">Set up a partner sandbox account</div>
@@ -863,7 +863,7 @@ Use this guide when a new travel partner needs sandbox access before production 
 
 ---
 
-## Better docs page: zoom
+## Better docs page: zoom 🔎
 
 <div class="page-zoom-grid">
   <div class="page-zoom-card">
@@ -889,7 +889,7 @@ Use this zoom slide to make the design lesson explicit. The improved page works 
 
 <!-- _class: lead -->
 
-## Takeaway: structure is kindness
+## Takeaway: structure is kindness 🤝
 
 Good structure saves readers from doing your sorting work.
 
@@ -904,7 +904,7 @@ Close the structure section with the human reason for organizing content. Every 
 
 <div class="section-kicker">4 / Better trust</div>
 
-## Better trust
+## Better trust 🛡️
 
 Readers need clues that the page is safe to use.
 
@@ -917,7 +917,7 @@ Transition from structure to trust. A well-structured page still fails if reader
 
 ---
 
-## Trust clues readers need
+## Trust clues readers need 🧩
 
 - Last reviewed
 - Applies to
@@ -932,7 +932,7 @@ Explain the practical clues that help readers judge a page before acting on it. 
 
 ---
 
-## Review and names
+## Review and names 👥
 
 A reviewed page should tell readers who stands behind it.
 
@@ -943,7 +943,7 @@ Explain how review turns documentation into something people can rely on. Review
 
 ---
 
-## Old pages need warning labels
+## Old pages need warning labels 🏷️
 
 Old content should say what it is, where to go, and when it stops applying.
 
@@ -956,7 +956,7 @@ Explain that stale pages are especially dangerous when they still look official.
 
 <!-- _class: lead -->
 
-## Takeaway: trust needs upkeep
+## Takeaway: trust needs upkeep 🔧
 
 If no one checks the clue, the clue becomes noise.
 
@@ -971,7 +971,7 @@ Name the cost honestly. Review dates, owners, and warning labels require upkeep,
 
 <div class="section-kicker">5 / Better AI</div>
 
-## Better AI
+## Better AI 🤖
 
 AI works better with docs that already help people.
 
@@ -984,7 +984,7 @@ Transition into AI without treating it as magic. AI does not remove the need for
 
 ---
 
-## A practical Claude flow
+## A practical Claude flow 💬
 
 1. Ask Claude to summarize scattered source material.
 2. Ask Claude to list conflicts, missing owners, and stale claims.
@@ -1001,7 +1001,7 @@ Describe a practical AI-assisted flow for the onboarding case. Claude can proces
 
 ---
 
-## Weak prompt vs useful prompt
+## Weak prompt vs useful prompt 🧪
 
 <div class="prompt-compare">
   <div class="prompt-card weak">
@@ -1023,7 +1023,7 @@ Use this as the concrete demo moment. Show that a useful prompt mirrors the writ
 
 ---
 
-## AI finds gaps, not truth
+## AI finds gaps, not truth 🕳️
 
 AI can help you move faster through the mess, but it cannot decide what is true unless the sources and humans around it make truth visible.
 
@@ -1034,7 +1034,7 @@ Set a clear boundary around AI usefulness. AI can notice that a prerequisite app
 
 ---
 
-## Human-readable to AI-friendly
+## Human-readable to AI-friendly 🤝
 
 If a human can scan it, an assistant can often retrieve it better.
 
@@ -1047,7 +1047,7 @@ Explain that AI-friendly docs start with human-friendly structure. Clear heading
 
 <!-- _class: lead -->
 
-## Takeaway: AI rewards structured docs
+## Takeaway: AI rewards structured docs 🧱
 
 Better inputs make better assistance possible.
 
@@ -1060,7 +1060,7 @@ Close the AI section by returning to fundamentals. AI raises the stakes for sour
 
 <!-- _class: lead manifesto -->
 
-## Five rules for useful docs
+## Five rules for useful docs 📌
 
 1. Name the reader
 2. Follow the task
@@ -1075,7 +1075,7 @@ Summarize the talk as a short practical checklist. Make this slide the memory ai
 
 ---
 
-## What to try next
+## What to try next 🚀
 
 - Pick one messy page
 - Map its sources
@@ -1091,7 +1091,7 @@ Give the audience a small next action instead of a giant documentation transform
 
 <!-- _class: lead -->
 
-## Thank you
+## Thank you 🙌
 
 Questions, observations, and remarks are welcome.
 
