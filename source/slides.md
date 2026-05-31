@@ -148,6 +148,44 @@ style: |
       font-size: 0.82em;
       line-height: 1.25;
     }
+    .prompt-compare {
+      display: grid;
+      grid-template-columns: 0.95fr 1.25fr;
+      gap: 0.72em;
+      margin-top: 0.75em;
+    }
+    .prompt-card {
+      min-height: 7.3em;
+      padding: 0.72em;
+      border-left: 6px solid #8be9fd;
+      border-radius: 8px;
+      background: #44475a;
+      color: #f8f8f2;
+    }
+    .prompt-card.weak {
+      border-color: #ff5555;
+    }
+    .prompt-card.useful {
+      border-color: #50fa7b;
+    }
+    .prompt-label {
+      color: #f1fa8c;
+      font-size: 0.62em;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .prompt-text {
+      margin-top: 0.32em;
+      font-size: 0.78em;
+      line-height: 1.22;
+    }
+    .prompt-why {
+      margin-top: 0.7em;
+      color: #8be9fd;
+      font-size: 0.7em;
+      line-height: 1.2;
+    }
     .map-overview {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -927,22 +965,33 @@ Describe a practical AI-assisted flow for the onboarding case. Claude can proces
 
 ---
 
+## Weak prompt vs useful prompt
+
+<div class="prompt-compare">
+  <div class="prompt-card weak">
+    <div class="prompt-label">Weak</div>
+    <div class="prompt-text">"Write partner onboarding docs from these notes."</div>
+    <div class="prompt-why">Too early: it asks for polish before truth.</div>
+  </div>
+  <div class="prompt-card useful">
+    <div class="prompt-label">Useful</div>
+    <div class="prompt-text">"Read these fragments. List conflicts, stale claims, missing owners, and risky assumptions. Propose a docs map. Do not draft yet."</div>
+    <div class="prompt-why">Better: it asks AI to sort the mess before writing.</div>
+  </div>
+</div>
+
+<!--
+Use this as the concrete demo moment. Show that a useful prompt mirrors the writer's discovery work: find conflict, find gaps, name ownership, and delay drafting until the material is verified.
+-->
+
+---
+
 ## AI finds gaps, not truth
 
 AI can help you move faster through the mess, but it cannot decide what is true unless the sources and humans around it make truth visible.
 
 <!--
 Set a clear boundary around AI usefulness. AI can notice that a prerequisite appears in one source but not another, but it cannot decide which source is authoritative.
--->
-
----
-
-## Why clean sections and labels matter
-
-Good retrieval depends on clean boundaries and useful labels.
-
-<!--
-Explain retrieval in accessible terms. Sections like requirements, setup, and troubleshooting are easier to find and reuse than one long mixed page.
 -->
 
 ---
