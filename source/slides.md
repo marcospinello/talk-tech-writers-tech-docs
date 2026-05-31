@@ -282,12 +282,12 @@ Frame the talk as a journey from scattered knowledge to a docs experience that h
 
 ## What you will learn
 
-- See docs as an information system
+- See docs as more than pages
 - Ask better questions before writing
-- Structure content for trust, maintenance, and AI
+- Shape docs people and AI can trust
 
 <!--
-Preview the learning path in plain terms. Tell the audience that useful docs come from discovery, structure, trust signals, and maintenance, not only sentence-level polish.
+Preview the learning path in plain terms. Tell the audience that useful docs come from discovery, structure, clear ownership, and regular checkups, not only sentence-level polish.
 -->
 
 ---
@@ -352,7 +352,7 @@ Walk through the source board as the messy input. None of these fragments are ba
 
 ## (Too) many docs can hide the truth.
 
-Published pages are not the same thing as a reliable source of truth.
+A published page can still be stale, partial, or wrong.
 
 <!--
 Separate the existence of documentation from the reliability of documentation. A page can look official while being incomplete, stale, or disconnected from the team that owns the behavior.
@@ -386,13 +386,13 @@ Translate the same problem into company impact. Every unclear answer becomes a c
 
 <!-- _class: lead -->
 
-## Takeaway: docs are an information system
+## Takeaway: docs are a living map
 
 Pages are the visible part. \
-Decisions, owners, and signals make them work.
+Decisions, owners, and updates make them work.
 
 <!--
-Land the first section with a clear mental model. Good docs are not only words on pages; they are the product of source management, ownership, review, and structure.
+Land the first section with a clear mental model. Good docs are not only words on pages; they come from knowing where answers come from, who can verify them, and when they changed.
 -->
 
 ---
@@ -419,6 +419,7 @@ Transition from diagnosing the problem to a practical working method. This check
 ## Question 1: Who is this for?
 
 Primary reader:
+
 - TravelCo integration lead.
 
 <!--
@@ -430,6 +431,7 @@ Explain why "the user" is too broad to guide useful documentation. Audience deci
 ## Question 2: What are they trying to do?
 
 Task:
+
 - Complete partner onboarding with the fewest unknowns.
 
 <!--
@@ -440,39 +442,42 @@ Move from audience identity to audience intent. The page should support a task, 
 
 ## Question 3: Where does truth live?
 
-Sources:
+Places to check:
+
 - Product behavior
 - API contracts
 - Owner knowledge
 - Release notes
 
 <!--
-Explain that writers need to identify authoritative sources before writing. Distinguish between places where people discuss onboarding and places where truth is maintained.
+Explain that writers need to find the places where the answer is kept before writing. Distinguish between places where people discuss onboarding and places where behavior, contracts, and changes are actually recorded.
 -->
 
 ---
 
 ## Question 4: Who owns it?
 
-Owner:
-- The team accountable for the behavior and the promise.
+Verifier:
+
+- The team that owns the behavior and can say what changed.
 
 <!--
-Explain that ownership keeps documentation from becoming an orphaned snapshot. Writers coordinate ownership, but they cannot replace it.
+Explain that a named verifier keeps documentation from becoming an orphaned snapshot. Writers coordinate the answer, but they cannot replace the team that owns the behavior.
 -->
 
 ---
 
 ## Question 5: What changed?
 
-Change signal:
+Change clues:
+
 - New behavior
 - New risk
 - New reader confusion
 - New support trend
 
 <!--
-Explain that change is where documentation quietly breaks. Writers need signals that tell them when a requirement, API field, or onboarding policy has moved.
+Explain that change is where documentation quietly breaks. Writers need clues that tell them when a requirement, API field, or onboarding policy has moved.
 -->
 
 ---
@@ -520,7 +525,7 @@ Explain the move from collecting sources to organizing them. Mapping prevents th
 <div class="map-overview">
   <div class="map-card">
     <div class="map-source">GitLab issue</div>
-    <div class="map-action">Keep as source of truth</div>
+    <div class="map-action">Use to verify behavior</div>
   </div>
   <div class="map-card">
     <div class="map-source">Confluence page</div>
@@ -551,7 +556,7 @@ Walk through the map as an editorial decision tool, not a final navigation menu.
 
 Full docs map:
 Source | What it explains | Audience | Owner | Freshness | Action
-GitLab issue | Auth setup change | Engineers | Partner Integrations | Recent | Keep as source of truth
+GitLab issue | Auth setup change | Engineers | Partner Integrations | Recent | Use to verify behavior
 Confluence page | Onboarding flow | Partners | Docs team | 8 months old | Merge into onboarding guide
 Drive sheet | Partner fields | Ops | Unknown | Unclear | Ask owner to verify
 Slack thread | Sandbox exception | Support | Engineer | Recent | Rewrite as task steps
@@ -584,7 +589,7 @@ Human memory | Removed step | Writers | Engineer | Current | Link as supporting 
     </div>
     <div class="map-field">
       <div class="map-field-name">Action</div>
-      <div class="map-field-value">Keep as source of truth</div>
+      <div class="map-field-value">Use to verify behavior</div>
     </div>
     <div class="map-field">
       <div class="map-field-name">Decision</div>
@@ -661,7 +666,7 @@ Describe how this page technically contains information but still fails the read
       <div class="page-heading">Owner and freshness</div>
       <div class="page-line">- Owner: Partner Integrations.</div>
       <div class="page-line">- Last reviewed: 2026-05-30.</div>
-      <div class="page-line">- Source of truth: Partner onboarding runbook.</div>
+      <div class="page-line">- Main reference: Partner onboarding runbook.</div>
     </div>
   </div>
 </div>
@@ -694,7 +699,7 @@ Use this guide when a new travel partner needs sandbox access before production 
 ## Owner and freshness
 - Owner: Partner Integrations.
 - Last reviewed: 2026-05-30.
-- Source of truth: Partner onboarding runbook.
+- Main reference: Partner onboarding runbook.
 -->
 
 ---
@@ -711,8 +716,8 @@ Use this guide when a new travel partner needs sandbox access before production 
     <div class="page-zoom-text">The verify section tells readers how to know the setup worked.</div>
   </div>
   <div class="page-zoom-card">
-    <div class="page-zoom-title">Trust signals</div>
-    <div class="page-zoom-text">Owner, review date, and source of truth make the page safer to use.</div>
+    <div class="page-zoom-title">Trust clues</div>
+    <div class="page-zoom-text">Owner, review date, and main reference make the page safer to use.</div>
   </div>
 </div>
 
@@ -740,7 +745,7 @@ Close the structure section with the human reason for organizing content. Every 
 
 ## Better trust
 
-Readers need signals that the page is safe to use.
+Readers need clues that the page is safe to use.
 
 <div class="section-rule"></div>
 
@@ -750,7 +755,7 @@ Transition from structure to trust. A well-structured page still fails if reader
 
 ---
 
-## Trust signals readers need
+## Trust clues readers need
 
 - Last reviewed
 - Applies to
@@ -759,39 +764,39 @@ Transition from structure to trust. A well-structured page still fails if reader
 - Next escalation path
 
 <!--
-Explain the practical signals that help readers judge a page before acting on it. Trust signals do not need to be fancy, but they need to be visible and true.
+Explain the practical clues that help readers judge a page before acting on it. They do not need to be fancy, but they need to be visible and true.
 -->
 
 ---
 
-## Review and ownership
+## Review and names
 
-A review process is a promise with names attached.
+A reviewed page should tell readers who stands behind it.
 
 <!--
-Explain how review and ownership turn documentation into a maintained artifact. Review needs the right subject-matter experts, not just a general approval.
+Explain how review turns documentation into something people can rely on. Review needs the right subject-matter experts, not just a general approval.
 -->
 
 ---
 
-## Freshness and deprecation
+## Old pages need warning labels
 
 Old content should say what it is, where to go, and when it stops applying.
 
 <!--
-Explain that stale pages are especially dangerous when they still look official. Freshness notes and deprecation paths preserve reader confidence even when content changes.
+Explain that stale pages are especially dangerous when they still look official. Review notes and warning labels help readers know whether the content still applies.
 -->
 
 ---
 
 <!-- _class: lead -->
 
-## Takeaway: trust has maintenance costs
+## Takeaway: trust needs upkeep
 
-If no one maintains the signal, the signal becomes noise.
+If no one checks the clue, the clue becomes noise.
 
 <!--
-Name the cost honestly. Review dates, owners, and deprecation notices require maintenance, but the alternative is silent decay.
+Name the cost honestly. Review dates, owners, and warning labels require upkeep, but the alternative is silent decay.
 -->
 
 ---
@@ -802,17 +807,17 @@ Name the cost honestly. Review dates, owners, and deprecation notices require ma
 
 ## Better AI
 
-AI can use docs better when docs are already structured for people.
+AI works better with docs that already help people.
 
 <div class="section-rule"></div>
 
 <!--
-Transition into AI without treating it as magic. AI does not remove the need for reliable documentation; it amplifies the value of structure, ownership, and clear source boundaries.
+Transition into AI without treating it as magic. AI does not remove the need for reliable documentation; it rewards clear structure, clear owners, and clear source boundaries.
 -->
 
 ---
 
-## Practical Claude workflow
+## A practical Claude flow
 
 1. Ask Claude to summarize scattered source material.
 2. Ask Claude to list conflicts, missing owners, and stale claims.
@@ -820,10 +825,10 @@ Transition into AI without treating it as magic. AI does not remove the need for
 4. Ask a human expert to verify the proposed structure and claims.
 5. Use Claude to draft the first page from verified inputs.
 6. Review the draft for accuracy, audience fit, and missing caveats.
-7. Add metadata, source links, ownership, and freshness signals.
+7. Add labels, source links, owners, and review dates.
 
 <!--
-Describe a practical AI-assisted workflow for the onboarding case. Claude can process fragments, reveal gaps, propose structure, and draft from verified inputs, but the team still has to validate truth.
+Describe a practical AI-assisted flow for the onboarding case. Claude can process fragments, reveal gaps, propose structure, and draft from verified inputs, but the team still has to validate truth.
 -->
 
 ---
@@ -838,22 +843,22 @@ Set a clear boundary around AI usefulness. AI can notice that a prerequisite app
 
 ---
 
-## Why chunks and metadata matter
+## Why clean sections and labels matter
 
 Good retrieval depends on clean boundaries and useful labels.
 
 <!--
-Explain chunking and metadata in accessible terms. Sections like requirements, setup, and troubleshooting make better retrieval units than one long mixed page.
+Explain retrieval in accessible terms. Sections like requirements, setup, and troubleshooting are easier to find and reuse than one long mixed page.
 -->
 
 ---
 
-## Human-readable to agent-friendly
+## Human-readable to AI-friendly
 
 If a human can scan it, an assistant can often retrieve it better.
 
 <!--
-Explain that agent-friendly docs start with human-friendly structure. Clear headings, explicit prerequisites, and stable terminology help both TravelCo and AI tools find the right answer.
+Explain that AI-friendly docs start with human-friendly structure. Clear headings, explicit prerequisites, and stable terminology help both TravelCo and AI tools find the right answer.
 -->
 
 ---
@@ -878,7 +883,7 @@ Close the AI section by returning to fundamentals. AI raises the stakes for sour
 2. Follow the task
 3. Map the truth
 4. Show the owner
-5. Maintain the signal
+5. Keep it alive
 
 <!--
 Summarize the talk as a short practical checklist. Make this slide the memory aid the audience can carry back to their own docs.
@@ -890,7 +895,7 @@ Summarize the talk as a short practical checklist. Make this slide the memory ai
 
 - Pick one messy page
 - Map its sources
-- Add one trust signal
+- Add one trust clue
 - Ask one better review question
 
 <!--
@@ -914,5 +919,5 @@ GitHub: [marcospinello](https://github.com/marcospinello)
 Bandcamp: [Be-Style EP](https://spinello-band.bandcamp.com/album/be-style)
 
 <!--
-Invite questions and make space for practical discussion. Close by reinforcing that useful docs are built through curiosity, structure, and maintenance.
+Invite questions and make space for practical discussion. Close by reinforcing that useful docs are built through curiosity, structure, and care.
 -->
