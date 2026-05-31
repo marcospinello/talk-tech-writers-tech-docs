@@ -104,6 +104,50 @@ style: |
       width: 50%;
       padding: 0.35em 0.6em;
     }
+    .question-card h2 {
+      color: #f1fa8c;
+    }
+    .question-tool {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 0.8em;
+      margin-top: 0.8em;
+    }
+    .question-panel {
+      min-height: 4.9em;
+      padding: 0.78em;
+      border-left: 6px solid #8be9fd;
+      border-radius: 8px;
+      background: #44475a;
+      color: #f8f8f2;
+    }
+    .question-label {
+      color: #ff79c6;
+      font-size: 0.62em;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .question-prompt {
+      margin-top: 0.18em;
+      font-size: 1.18em;
+      font-weight: 800;
+      line-height: 1.16;
+    }
+    .question-answer {
+      margin-top: 0.18em;
+      font-size: 1.02em;
+      line-height: 1.22;
+    }
+    .question-impact {
+      margin-top: 0.75em;
+      padding: 0.52em 0.7em;
+      border-radius: 8px;
+      background: #282a36;
+      color: #f8f8f2;
+      font-size: 0.82em;
+      line-height: 1.25;
+    }
     .map-overview {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -403,51 +447,82 @@ Land the first section with a clear mental model. Good docs are not only words o
 
 ## Better questions
 
-| Ask before drafting | Ask before publishing |
+| Tool | Question |
 | --- | --- |
-| Who is the reader? | Who can verify it? |
-| What job are they trying to complete? | What changed recently? |
-| What do they already know? | What happens if the doc is wrong? |
-| Where does the current truth live? | What can we delete or archive? |
+| Reader | Who needs this? |
+| Job | What are they trying to finish? |
+| Truth | Which answer should we trust? |
+| Verifier | Who can say this is correct? |
+| Change | What moved since last time? |
 
 <!--
-Transition from diagnosing the problem to a practical working method. This checklist reduces ambiguity before drafting and keeps review focused on truth, risk, and maintenance.
+Transition from diagnosing the problem to a practical toolkit. These five questions reduce ambiguity before drafting and keep review focused on truth, risk, and maintenance.
 -->
 
 ---
 
-## Question 1: Who is this for?
+<!-- _class: question-card -->
 
-Primary reader:
+## 1. Reader
 
-- TravelCo integration lead.
+<div class="question-tool">
+  <div class="question-panel">
+    <div class="question-label">Ask</div>
+    <div class="question-prompt">Who needs this?</div>
+  </div>
+  <div class="question-panel">
+    <div class="question-label">TravelCo answer</div>
+    <div class="question-answer">The integration lead setting up sandbox access.</div>
+  </div>
+</div>
+
+<div class="question-impact">This decides vocabulary, examples, and how much background to explain.</div>
 
 <!--
-Explain why "the user" is too broad to guide useful documentation. Audience decisions shape vocabulary, examples, and depth.
+Explain why "the user" is too broad to guide useful documentation. A named reader makes the writing choices concrete: vocabulary, examples, depth, and what not to explain.
 -->
 
 ---
 
-## Question 2: What are they trying to do?
+<!-- _class: question-card -->
 
-Task:
+## 2. Job
 
-- Complete partner onboarding with the fewest unknowns.
+<div class="question-tool">
+  <div class="question-panel">
+    <div class="question-label">Ask</div>
+    <div class="question-prompt">What are they trying to finish?</div>
+  </div>
+  <div class="question-panel">
+    <div class="question-label">TravelCo answer</div>
+    <div class="question-answer">Complete onboarding without guessing the next step.</div>
+  </div>
+</div>
+
+<div class="question-impact">This turns a system explanation into a path readers can follow.</div>
 
 <!--
-Move from audience identity to audience intent. The page should support a task, not merely describe a system.
+Move from audience identity to audience intent. The page should support a job the reader is trying to finish, not merely describe a system.
 -->
 
 ---
 
-## Question 3: Where does truth live?
+<!-- _class: question-card -->
 
-Places to check:
+## 3. Truth
 
-- Product behavior
-- API contracts
-- Owner knowledge
-- Release notes
+<div class="question-tool">
+  <div class="question-panel">
+    <div class="question-label">Ask</div>
+    <div class="question-prompt">Which answer should we trust?</div>
+  </div>
+  <div class="question-panel">
+    <div class="question-label">TravelCo answer</div>
+    <div class="question-answer">Product behavior, API contracts, owner knowledge, and release notes.</div>
+  </div>
+</div>
+
+<div class="question-impact">This keeps Slack guesses from becoming permanent documentation.</div>
 
 <!--
 Explain that writers need to find the places where the answer is kept before writing. Distinguish between places where people discuss onboarding and places where behavior, contracts, and changes are actually recorded.
@@ -455,11 +530,22 @@ Explain that writers need to find the places where the answer is kept before wri
 
 ---
 
-## Question 4: Who owns it?
+<!-- _class: question-card -->
 
-Verifier:
+## 4. Verifier
 
-- The team that owns the behavior and can say what changed.
+<div class="question-tool">
+  <div class="question-panel">
+    <div class="question-label">Ask</div>
+    <div class="question-prompt">Who can say this is correct?</div>
+  </div>
+  <div class="question-panel">
+    <div class="question-label">TravelCo answer</div>
+    <div class="question-answer">Partner Integrations owns the behavior and can confirm changes.</div>
+  </div>
+</div>
+
+<div class="question-impact">This gives the page a human route back to reality.</div>
 
 <!--
 Explain that a named verifier keeps documentation from becoming an orphaned snapshot. Writers coordinate the answer, but they cannot replace the team that owns the behavior.
@@ -467,14 +553,22 @@ Explain that a named verifier keeps documentation from becoming an orphaned snap
 
 ---
 
-## Question 5: What changed?
+<!-- _class: question-card -->
 
-Change clues:
+## 5. Change
 
-- New behavior
-- New risk
-- New reader confusion
-- New support trend
+<div class="question-tool">
+  <div class="question-panel">
+    <div class="question-label">Ask</div>
+    <div class="question-prompt">What moved since last time?</div>
+  </div>
+  <div class="question-panel">
+    <div class="question-label">TravelCo answer</div>
+    <div class="question-answer">New behavior, new risk, reader confusion, or a support trend.</div>
+  </div>
+</div>
+
+<div class="question-impact">This helps the docs change when the product changes.</div>
 
 <!--
 Explain that change is where documentation quietly breaks. Writers need clues that tell them when a requirement, API field, or onboarding policy has moved.
