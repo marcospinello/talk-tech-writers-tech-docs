@@ -345,6 +345,8 @@ Marco Spinello
 Senior technical writer at Booking.com
 
 <!--
+Timing: 0:45 | Pace: pause.
+Overall target: 45-55 minutes. If time runs short, compress full-speed slides and skip optional detours.
 Open with the promise that this is a practical talk, not a style lecture. Set the tone around curiosity, systems thinking, and making technical information easier to trust.
 -->
 
@@ -357,6 +359,7 @@ Open with the promise that this is a practical talk, not a style lecture. Set th
 One messy onboarding story, five better questions, one usable docs system.
 
 <!--
+Timing: 1:00 | Pace: full-speed.
 Frame the talk as a journey from scattered knowledge to a docs experience that helps real people move. Tie the promise to TravelCo partner onboarding so every idea has a concrete anchor.
 -->
 
@@ -369,6 +372,7 @@ Frame the talk as a journey from scattered knowledge to a docs experience that h
 - Shape docs people and AI can trust
 
 <!--
+Timing: 1:00 | Pace: full-speed.
 Preview the learning path in plain terms. Tell the audience that useful docs come from discovery, structure, clear ownership, and regular checkups, not only sentence-level polish.
 -->
 
@@ -384,6 +388,7 @@ Preview the learning path in plain terms. Tell the audience that useful docs com
 - Curious by habit
 
 <!--
+Timing: 2:00 | Pace: pause.
 Give enough personal context to explain your point of view. Connect the non-CS background to technical writing as a practice of making expert knowledge usable.
 -->
 
@@ -400,6 +405,7 @@ A new partner needs to connect, configure, test, and go live.
 <div class="section-rule"></div>
 
 <!--
+Timing: 0:45 | Pace: full-speed. Section budget: 8-10 minutes.
 Introduce TravelCo as the running example. The partner's goal is practical: connect, configure, test, and go live without chasing answers across teams.
 -->
 
@@ -410,6 +416,7 @@ Introduce TravelCo as the running example. The partner's goal is practical: conn
 "What do we need to do next?"
 
 <!--
+Timing: 0:45 | Pace: pause.
 Make the question sound simple on purpose. Use it to show the gap between how readers think and how internal knowledge is often organized.
 -->
 
@@ -427,6 +434,7 @@ Make the question sound simple on purpose. Use it to show the gap between how re
 </div>
 
 <!--
+Timing: 2:30 | Pace: pause.
 Walk through the source board as the messy input. None of these fragments are bad by themselves, but together they create a maze for a partner who only needs the next step.
 -->
 
@@ -437,6 +445,7 @@ Walk through the source board as the messy input. None of these fragments are ba
 A published page can still be stale, partial, or wrong.
 
 <!--
+Timing: 1:15 | Pace: pause.
 Separate the existence of documentation from the reliability of documentation. A page can look official while being incomplete, stale, or disconnected from the team that owns the behavior.
 -->
 
@@ -449,6 +458,7 @@ Separate the existence of documentation from the reliability of documentation. A
 - Writers become detectives
 
 <!--
+Timing: 0:45 | Pace: full-speed.
 Describe the human cost before the business cost. Unclear docs shift effort onto partners, support engineers, account managers, and writers.
 -->
 
@@ -461,6 +471,7 @@ Describe the human cost before the business cost. Unclear docs shift effort onto
 - Riskier releases
 
 <!--
+Timing: 0:45 | Pace: full-speed.
 Translate the same problem into company impact. Every unclear answer becomes a conversation, escalation, or delay, and TravelCo takes longer to go live.
 -->
 
@@ -474,6 +485,7 @@ Pages are the visible part. \
 Decisions, owners, and updates make them work.
 
 <!--
+Timing: 1:15 | Pace: pause.
 Land the first section with a clear mental model. Good docs are not only words on pages; they come from knowing where answers come from, who can verify them, and when they changed.
 -->
 
@@ -494,6 +506,7 @@ Land the first section with a clear mental model. Good docs are not only words o
 | Change | What moved since last time? |
 
 <!--
+Timing: 1:45 | Pace: pause. Section budget: 7-9 minutes.
 Transition from diagnosing the problem to a practical toolkit. These five questions reduce ambiguity before drafting and keep review focused on truth, risk, and maintenance.
 -->
 
@@ -517,6 +530,7 @@ Transition from diagnosing the problem to a practical toolkit. These five questi
 <div class="question-impact">This decides vocabulary, examples, and how much background to explain.</div>
 
 <!--
+Timing: 1:00 | Pace: full-speed.
 Explain why "the user" is too broad to guide useful documentation. A named reader makes the writing choices concrete: vocabulary, examples, depth, and what not to explain.
 -->
 
@@ -540,6 +554,7 @@ Explain why "the user" is too broad to guide useful documentation. A named reade
 <div class="question-impact">This turns a system explanation into a path readers can follow.</div>
 
 <!--
+Timing: 1:00 | Pace: full-speed.
 Move from audience identity to audience intent. The page should support a job the reader is trying to finish, not merely describe a system.
 -->
 
@@ -563,6 +578,7 @@ Move from audience identity to audience intent. The page should support a job th
 <div class="question-impact">This keeps Slack guesses from becoming permanent documentation.</div>
 
 <!--
+Timing: 1:00 | Pace: full-speed.
 Explain that writers need to find the places where the answer is kept before writing. Distinguish between places where people discuss onboarding and places where behavior, contracts, and changes are actually recorded.
 -->
 
@@ -586,6 +602,7 @@ Explain that writers need to find the places where the answer is kept before wri
 <div class="question-impact">This gives the page a human route back to reality.</div>
 
 <!--
+Timing: 1:00 | Pace: full-speed.
 Explain that a named verifier keeps documentation from becoming an orphaned snapshot. Writers coordinate the answer, but they cannot replace the team that owns the behavior.
 -->
 
@@ -609,6 +626,7 @@ Explain that a named verifier keeps documentation from becoming an orphaned snap
 <div class="question-impact">This helps the docs change when the product changes.</div>
 
 <!--
+Timing: 1:00 | Pace: full-speed.
 Explain that change is where documentation quietly breaks. Writers need clues that tell them when a requirement, API field, or onboarding policy has moved.
 -->
 
@@ -621,6 +639,7 @@ Explain that change is where documentation quietly breaks. Writers need clues th
 Discovery is documentation work.
 
 <!--
+Timing: 1:00 | Pace: pause.
 Validate the invisible work. Asking, mapping, and confirming are not delays before writing; they are how useful writing becomes possible.
 -->
 
@@ -637,6 +656,7 @@ Turn scattered answers into a map readers can follow.
 <div class="section-rule"></div>
 
 <!--
+Timing: 0:45 | Pace: full-speed. Section budget: 12-15 minutes.
 Introduce structure as the next layer of usefulness. Once sources and owners are known, the writer can decide what belongs together and what belongs somewhere else.
 -->
 
@@ -647,6 +667,7 @@ Introduce structure as the next layer of usefulness. Once sources and owners are
 Inventory the fragments before choosing the page shape.
 
 <!--
+Timing: 0:45 | Pace: full-speed.
 Explain the move from collecting sources to organizing them. Mapping prevents the final page from simply mirroring the internal mess.
 -->
 
@@ -684,6 +705,7 @@ Explain the move from collecting sources to organizing them. Mapping prevents th
 <div class="map-lesson">The map is not a dumping ground. Every fragment gets a decision.</div>
 
 <!--
+Timing: 2:30 | Pace: pause.
 Walk through the map as an editorial decision tool, not a final navigation menu. The visible slide shows the key decision for each fragment so the audience can read it from the back of the room.
 
 Full docs map:
@@ -731,6 +753,7 @@ Human memory | Removed step | Writers | Engineer | Current | Link as supporting 
 </div>
 
 <!--
+Timing: 1:30 | Pace: optional detour.
 Use this zoom slide to show the columns behind the overview: Source, What it explains, Audience, Owner, Freshness, and Action. Every row answers the same questions, but the live slide does not need every row and column at once.
 -->
 
@@ -741,6 +764,7 @@ Use this zoom slide to show the columns behind the overview: Source, What it exp
 Every fragment needs a content decision.
 
 <!--
+Timing: 0:45 | Pace: full-speed.
 Explain that structure requires editorial judgment. Information can be merged, moved, rewritten, or deleted; deletion is part of making docs useful.
 -->
 
@@ -751,6 +775,7 @@ Explain that structure requires editorial judgment. Information can be merged, m
 Design the page around the reader's next decision.
 
 <!--
+Timing: 0:45 | Pace: full-speed.
 Explain how the docs map becomes an actual page. Each section should help the partner answer "Can I continue, or do I need something first?"
 -->
 
@@ -763,6 +788,7 @@ To set up a partner account, first make sure the partner is active and that all 
 </div>
 
 <!--
+Timing: 1:45 | Pace: pause.
 Describe how this page technically contains information but still fails the reader. It hides prerequisites, mixes setup with troubleshooting, names no owner, and points people toward Slack instead of a durable answer.
 -->
 
@@ -804,6 +830,7 @@ Describe how this page technically contains information but still fails the read
 </div>
 
 <!--
+Timing: 2:30 | Pace: pause.
 Show what better structure looks like in the same case. This is a rendered-page mockup, not raw Markdown source. The slide compresses some line wording for live readability, while the complete model remains in these notes.
 
 Full improved page model:
@@ -854,6 +881,7 @@ Use this guide when a new travel partner needs sandbox access before production 
 </div>
 
 <!--
+Timing: 1:00 | Pace: optional detour.
 Use this zoom slide to make the design lesson explicit. The improved page works because it starts with the task, separates setup from verification, and ends with ownership and freshness signals.
 -->
 
@@ -866,6 +894,7 @@ Use this zoom slide to make the design lesson explicit. The improved page works 
 Good structure saves readers from doing your sorting work.
 
 <!--
+Timing: 0:45 | Pace: pause.
 Close the structure section with the human reason for organizing content. Every clear heading, sequence, and boundary removes work from the reader.
 -->
 
@@ -882,6 +911,7 @@ Readers need clues that the page is safe to use.
 <div class="section-rule"></div>
 
 <!--
+Timing: 0:45 | Pace: full-speed. Section budget: 5-6 minutes.
 Transition from structure to trust. A well-structured page still fails if readers cannot tell whether it is current, reviewed, and owned.
 -->
 
@@ -896,6 +926,7 @@ Transition from structure to trust. A well-structured page still fails if reader
 - Next escalation path
 
 <!--
+Timing: 1:00 | Pace: pause.
 Explain the practical clues that help readers judge a page before acting on it. They do not need to be fancy, but they need to be visible and true.
 -->
 
@@ -906,6 +937,7 @@ Explain the practical clues that help readers judge a page before acting on it. 
 A reviewed page should tell readers who stands behind it.
 
 <!--
+Timing: 0:45 | Pace: full-speed.
 Explain how review turns documentation into something people can rely on. Review needs the right subject-matter experts, not just a general approval.
 -->
 
@@ -916,6 +948,7 @@ Explain how review turns documentation into something people can rely on. Review
 Old content should say what it is, where to go, and when it stops applying.
 
 <!--
+Timing: 0:45 | Pace: full-speed.
 Explain that stale pages are especially dangerous when they still look official. Review notes and warning labels help readers know whether the content still applies.
 -->
 
@@ -928,6 +961,7 @@ Explain that stale pages are especially dangerous when they still look official.
 If no one checks the clue, the clue becomes noise.
 
 <!--
+Timing: 0:45 | Pace: pause.
 Name the cost honestly. Review dates, owners, and warning labels require upkeep, but the alternative is silent decay.
 -->
 
@@ -944,6 +978,7 @@ AI works better with docs that already help people.
 <div class="section-rule"></div>
 
 <!--
+Timing: 0:45 | Pace: full-speed. Section budget: 7-9 minutes.
 Transition into AI without treating it as magic. AI does not remove the need for reliable documentation; it rewards clear structure, clear owners, and clear source boundaries.
 -->
 
@@ -960,6 +995,7 @@ Transition into AI without treating it as magic. AI does not remove the need for
 7. Add labels, source links, owners, and review dates.
 
 <!--
+Timing: 1:45 | Pace: pause.
 Describe a practical AI-assisted flow for the onboarding case. Claude can process fragments, reveal gaps, propose structure, and draft from verified inputs, but the team still has to validate truth.
 -->
 
@@ -981,6 +1017,7 @@ Describe a practical AI-assisted flow for the onboarding case. Claude can proces
 </div>
 
 <!--
+Timing: 2:00 | Pace: pause.
 Use this as the concrete demo moment. Show that a useful prompt mirrors the writer's discovery work: find conflict, find gaps, name ownership, and delay drafting until the material is verified.
 -->
 
@@ -991,6 +1028,7 @@ Use this as the concrete demo moment. Show that a useful prompt mirrors the writ
 AI can help you move faster through the mess, but it cannot decide what is true unless the sources and humans around it make truth visible.
 
 <!--
+Timing: 1:15 | Pace: pause.
 Set a clear boundary around AI usefulness. AI can notice that a prerequisite appears in one source but not another, but it cannot decide which source is authoritative.
 -->
 
@@ -1001,6 +1039,7 @@ Set a clear boundary around AI usefulness. AI can notice that a prerequisite app
 If a human can scan it, an assistant can often retrieve it better.
 
 <!--
+Timing: 0:45 | Pace: full-speed.
 Explain that AI-friendly docs start with human-friendly structure. Clear headings, explicit prerequisites, and stable terminology help both TravelCo and AI tools find the right answer.
 -->
 
@@ -1013,6 +1052,7 @@ Explain that AI-friendly docs start with human-friendly structure. Clear heading
 Better inputs make better assistance possible.
 
 <!--
+Timing: 0:45 | Pace: pause.
 Close the AI section by returning to fundamentals. AI raises the stakes for source quality because messy docs become messy answers at scale.
 -->
 
@@ -1029,6 +1069,7 @@ Close the AI section by returning to fundamentals. AI raises the stakes for sour
 5. Keep it alive
 
 <!--
+Timing: 1:15 | Pace: pause.
 Summarize the talk as a short practical checklist. Make this slide the memory aid the audience can carry back to their own docs.
 -->
 
@@ -1042,6 +1083,7 @@ Summarize the talk as a short practical checklist. Make this slide the memory ai
 - Ask one better review question
 
 <!--
+Timing: 0:45 | Pace: full-speed.
 Give the audience a small next action instead of a giant documentation transformation. One page is enough to start practicing the method.
 -->
 
@@ -1062,5 +1104,6 @@ GitHub: [marcospinello](https://github.com/marcospinello)
 Bandcamp: [Be-Style EP](https://spinello-band.bandcamp.com/album/be-style)
 
 <!--
+Timing: 0:30 | Pace: pause.
 Invite questions and make space for practical discussion. Close by reinforcing that useful docs are built through curiosity, structure, and care.
 -->
