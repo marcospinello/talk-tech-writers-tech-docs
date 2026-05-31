@@ -340,6 +340,8 @@ style: |
 
 ## Tech docs for curious cats 🐾
 
+![bg right:50%](../assets/img/curious-cat.png)
+
 Marco Spinello
 
 Senior technical writer at Booking.com
@@ -354,7 +356,7 @@ Open with the promise that this is a practical talk, not a style lecture. Set th
 
 <!-- _class: lead -->
 
-## From messy notes to useful docs 📝
+## From messy notes 😵‍💫 to useful docs 📝
 
 One messy onboarding story, five better questions, one usable docs system.
 
@@ -365,7 +367,7 @@ Frame the talk as a journey from scattered knowledge to a docs experience that h
 
 ---
 
-## What you will learn 🧭
+## What you will learn 🎓
 
 - See docs as more than pages
 - Ask better questions before writing
@@ -382,10 +384,10 @@ Preview the learning path in plain terms. Tell the audience that useful docs com
 
 ![bg left:50%](../assets/img/about-me.jpg)
 
-- Senior technical writer at Booking.com
-- Guitar player in an instrumental power trio
-- No CS background
-- Curious by habit
+- ✍️ Senior technical writer at Booking.com
+- 🎸 Guitar player in an instrumental power trio
+- 🤷‍♂️ No CS background
+- 🐾 As curious as a cat
 
 <!--
 Timing: 2:00 | Pace: pause.
@@ -400,7 +402,12 @@ Give enough personal context to explain your point of view. Connect the non-CS b
 
 ## TravelCo partner onboarding ✈️
 
-A new partner needs to connect, configure, test, and go live.
+A new partner needs to:
+
+- Connect
+- Configure
+- Test
+- Go live
 
 <div class="section-rule"></div>
 
@@ -422,7 +429,7 @@ Make the question sound simple on purpose. Use it to show the gap between how re
 
 ---
 
-## The answer is everywhere 🗂️
+## The answer is everywhere 🗂️ 
 
 <div class="source-board">
   <div class="source-card">GitLab issue: auth setup changed after partner sandbox migration.</div>
@@ -440,7 +447,7 @@ Walk through the source board as the messy input. None of these fragments are ba
 
 ---
 
-## (Too) many docs can hide the truth 🔍
+## (Too) many docs can hide the truth 🤔
 
 A published page can still be stale, partial, or wrong.
 
@@ -538,7 +545,7 @@ Explain why "the user" is too broad to guide useful documentation. A named reade
 
 <!-- _class: question-card -->
 
-## 2. Job 🎯
+## 2. Job 🎯 
 
 <div class="question-tool">
   <div class="question-panel">
@@ -562,7 +569,7 @@ Move from audience identity to audience intent. The page should support a job th
 
 <!-- _class: question-card -->
 
-## 3. Truth 🔎
+## 3. Truth 🔎 
 
 <div class="question-tool">
   <div class="question-panel">
@@ -889,7 +896,7 @@ Use this zoom slide to make the design lesson explicit. The improved page works 
 
 <!-- _class: lead -->
 
-## Takeaway: structure is kindness 🤝
+## Takeaway: structure is kindness 🫶 
 
 Good structure saves readers from doing your sorting work.
 
@@ -917,7 +924,7 @@ Transition from structure to trust. A well-structured page still fails if reader
 
 ---
 
-## Trust clues readers need 🧩
+## Trust clues readers need 🧩 
 
 - Last reviewed
 - Applies to
@@ -1091,7 +1098,9 @@ Give the audience a small next action instead of a giant documentation transform
 
 <!-- _class: lead -->
 
-## Thank you 🙌
+## Thank you 🙏
+
+![bg right:50%](../assets/img/thank-you.jpg)
 
 Questions, observations, and remarks are welcome.
 

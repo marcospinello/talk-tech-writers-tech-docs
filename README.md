@@ -3,29 +3,30 @@
 A Marp-based slide deck for a talk introducing technical writing and technical
 documentation to non-expert audiences.
 
-The deck is authored in Markdown at `source/slides.md` and rendered with
-[Marp CLI](https://github.com/marp-team/marp-cli) into HTML, PDF, and PPTX.
+Write the deck in Markdown at `source/slides.md`. Render it with the
+[Marp command-line tool](https://github.com/marp-team/marp-cli) into HTML, PDF,
+and PowerPoint Open XML (`PPTX`).
 
 ## Repo Layout
 
 | Path | Purpose |
 | --- | --- |
 | `source/slides.md` | The source file for the slide deck. Edit this while authoring. |
-| `.marprc.yml` | Marp CLI configuration for input/output folders, theme, template, and HTML handling. |
-| `assets/themes/` | Local Marp themes. The active theme is configured in `.marprc.yml`. |
+| `.marprc.yml` | Marp command-line tool configuration for input/output folders, theme, template, and HTML handling. |
+| `assets/themes/` | Local Marp themes. `.marprc.yml` selects the active theme. |
 | `assets/img/` | Local images referenced from slides as `../assets/img/<filename>`. |
-| `output/` | Generated HTML, PDF, and PPTX files. Rebuild these; do not edit them by hand. |
+| `output/` | Generated HTML, PDF, and `PPTX` files. Rebuild these; do not edit them by hand. |
 | `package.json` | npm dependencies and project commands. |
 
 ## Image Assets
 
-Slide images live in `assets/img/` and are referenced from `source/slides.md`
-with paths like `../assets/img/<filename>`.
+Slide images live in `assets/img/`. Reference them from `source/slides.md` with
+paths like `../assets/img/<filename>`.
 
-Pixabay images are intended for deck visuals, with preference for AI-generated
-images when relevant results are available. Because direct image download was
-blocked by Pixabay/Cloudflare, manual search terms are tracked in
-`assets/img/PIXABAY_SEARCH_TERMS.md`.
+For deck visuals, prefer images from `https://pixabay.com/`, especially
+AI-generated results when they fit. Cloudflare blocked direct image downloads
+from that site during setup, so `assets/img/PIXABAY_SEARCH_TERMS.md` tracks
+manual search terms.
 
 Track image provenance in `assets/img/ATTRIBUTION.md`.
 
@@ -33,7 +34,7 @@ Track image provenance in `assets/img/ATTRIBUTION.md`.
 
 - Node.js 18 or later, with npm.
 - A Chromium-class browser, such as Chrome, Edge, Brave, or Chromium, for PDF
-  and PPTX export. HTML output and the live preview server do not need it.
+  and `PPTX` export. HTML output and the live preview server do not need it.
 
 ## Install Dependencies
 
@@ -70,9 +71,9 @@ use `.marprc.yml`.
 | --- | --- | --- |
 | HTML | `npm run marp:html` | `output/slides.html` |
 | PDF | `npm run marp:pdf` | `output/slides.pdf` |
-| PPTX | `npm run marp:pptx` | `output/slides.pptx` |
+| `PPTX` | `npm run marp:pptx` | `output/slides.pptx` |
 
-The direct Marp CLI equivalents are:
+The direct Marp command-line tool equivalents are:
 
 ```bash
 npx marp --config-file .marprc.yml --html --allow-local-files source/slides.md -o output/slides.html
@@ -105,7 +106,7 @@ Run Markdown linting for the slide source:
 npx markdownlint source/slides.md
 ```
 
-If Vale is installed and the styles are available, run prose linting with:
+Optional: to run prose linting with Vale, use:
 
 ```bash
 vale sync
