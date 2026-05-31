@@ -1102,15 +1102,13 @@ Give the audience a small next action instead of a giant documentation transform
 
 ![bg right:50%](../assets/img/thank-you.jpg)
 
-Questions, observations, and remarks are welcome.
+Questions, observations, and remarks are welcome! ✨
 
-Marco Spinello
+Marco Spinello 🐾
 
-LinkedIn: [marco-spinello](https://www.linkedin.com/in/marco-spinello/)
-
-GitHub: [marcospinello](https://github.com/marcospinello)
-
-Bandcamp: [Be-Style EP](https://spinello-band.bandcamp.com/album/be-style)
+- LinkedIn: [marco-spinello](https://www.linkedin.com/in/marco-spinello/)
+- GitHub: [marcospinello](https://github.com/marcospinello)
+- Bandcamp: [Be-Style EP](https://spinello-band.bandcamp.com/album/be-style)
 
 <!--
 Timing: 0:30 | Pace: pause.
