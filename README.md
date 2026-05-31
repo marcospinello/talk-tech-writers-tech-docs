@@ -17,6 +17,18 @@ The deck is authored in Markdown at `source/slides.md` and rendered with
 | `output/` | Generated HTML, PDF, and PPTX files. Rebuild these; do not edit them by hand. |
 | `package.json` | npm dependencies and project commands. |
 
+## Image Assets
+
+Slide images live in `assets/img/` and are referenced from `source/slides.md`
+with paths like `../assets/img/<filename>`.
+
+Pixabay images are intended for deck visuals, with preference for AI-generated
+images when relevant results are available. Because direct image download was
+blocked by Pixabay/Cloudflare, manual search terms are tracked in
+`assets/img/PIXABAY_SEARCH_TERMS.md`.
+
+Track image provenance in `assets/img/ATTRIBUTION.md`.
+
 ## Prerequisites
 
 - Node.js 18 or later, with npm.
