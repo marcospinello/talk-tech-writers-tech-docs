@@ -350,7 +350,7 @@ Walk through the source board as the messy input. None of these fragments are ba
 
 ---
 
-## Docs exist. Truth is harder.
+## (Too) many docs can hide the truth.
 
 Published pages are not the same thing as a reliable source of truth.
 
@@ -388,7 +388,8 @@ Translate the same problem into company impact. Every unclear answer becomes a c
 
 ## Takeaway: docs are an information system
 
-Pages are the visible part. Decisions, owners, and signals make them work.
+Pages are the visible part. \
+Decisions, owners, and signals make them work.
 
 <!--
 Land the first section with a clear mental model. Good docs are not only words on pages; they are the product of source management, ownership, review, and structure.
@@ -417,7 +418,8 @@ Transition from diagnosing the problem to a practical working method. This check
 
 ## Question 1: Who is this for?
 
-Primary reader: TravelCo integration lead.
+Primary reader:
+- TravelCo integration lead.
 
 <!--
 Explain why "the user" is too broad to guide useful documentation. Audience decisions shape vocabulary, examples, and depth.
@@ -427,7 +429,8 @@ Explain why "the user" is too broad to guide useful documentation. Audience deci
 
 ## Question 2: What are they trying to do?
 
-Task: complete partner onboarding with the fewest unknowns.
+Task:
+- Complete partner onboarding with the fewest unknowns.
 
 <!--
 Move from audience identity to audience intent. The page should support a task, not merely describe a system.
@@ -437,7 +440,11 @@ Move from audience identity to audience intent. The page should support a task, 
 
 ## Question 3: Where does truth live?
 
-Sources: product behavior, API contracts, owner knowledge, release notes.
+Sources:
+- Product behavior
+- API contracts
+- Owner knowledge
+- Release notes
 
 <!--
 Explain that writers need to identify authoritative sources before writing. Distinguish between places where people discuss onboarding and places where truth is maintained.
@@ -447,7 +454,8 @@ Explain that writers need to identify authoritative sources before writing. Dist
 
 ## Question 4: Who owns it?
 
-Owner: the team accountable for the behavior and the promise.
+Owner:
+- The team accountable for the behavior and the promise.
 
 <!--
 Explain that ownership keeps documentation from becoming an orphaned snapshot. Writers coordinate ownership, but they cannot replace it.
@@ -457,7 +465,11 @@ Explain that ownership keeps documentation from becoming an orphaned snapshot. W
 
 ## Question 5: What changed?
 
-Change signal: new behavior, new risk, new reader confusion, new support trend.
+Change signal:
+- New behavior
+- New risk
+- New reader confusion
+- New support trend
 
 <!--
 Explain that change is where documentation quietly breaks. Writers need signals that tell them when a requirement, API field, or onboarding policy has moved.
