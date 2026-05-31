@@ -25,6 +25,40 @@ style: |
     .accent {
       color: #ff79c6;
     }
+    .section-divider,
+    .section-open {
+      text-align: left;
+    }
+    .section-divider h2,
+    .section-open h2 {
+      margin-top: 0.05em;
+      margin-bottom: 0.25em;
+      line-height: 1.05;
+    }
+    .section-divider p {
+      max-width: 780px;
+      margin-top: 0.4em;
+      font-size: 1.05em;
+      line-height: 1.3;
+    }
+    .section-kicker {
+      margin-bottom: 0.35em;
+      color: #8be9fd;
+      font-size: 0.62em;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .section-open .section-kicker {
+      margin-bottom: 0.55em;
+    }
+    .section-rule {
+      width: 5.2em;
+      height: 0.22em;
+      margin-top: 0.8em;
+      border-radius: 999px;
+      background: #ff79c6;
+    }
     .manifesto p {
       font-size: 1.4em;
       font-weight: 600;
@@ -229,7 +263,7 @@ Marco Spinello
 Senior technical writer at Booking.com
 
 <!--
-Open with the promise that this is a practical talk, not a style lecture. Explain that the partner onboarding case study will carry the audience from messy notes to useful docs. Set the tone around curiosity, systems thinking, and making technical information easier to trust.
+Open with the promise that this is a practical talk, not a style lecture. Set the tone around curiosity, systems thinking, and making technical information easier to trust.
 -->
 
 ---
@@ -241,7 +275,7 @@ Open with the promise that this is a practical talk, not a style lecture. Explai
 One messy onboarding story, five better questions, one usable docs system.
 
 <!--
-Frame the talk as a journey from scattered knowledge to a docs experience that helps real people move. Tie the promise to TravelCo partner onboarding so the audience knows every concept has a concrete anchor. Emphasize that usefulness comes from decisions about audience, structure, ownership, and maintenance.
+Frame the talk as a journey from scattered knowledge to a docs experience that helps real people move. Tie the promise to TravelCo partner onboarding so every idea has a concrete anchor.
 -->
 
 ---
@@ -253,7 +287,7 @@ Frame the talk as a journey from scattered knowledge to a docs experience that h
 - Structure content for trust, maintenance, and AI
 
 <!--
-Preview the learning path in plain terms. Tell the audience that the session is about the work around writing as much as the writing itself. Connect each learning outcome to the partner trying to complete onboarding without chasing answers across teams.
+Preview the learning path in plain terms. Tell the audience that useful docs come from discovery, structure, trust signals, and maintenance, not only sentence-level polish.
 -->
 
 ---
@@ -268,17 +302,23 @@ Preview the learning path in plain terms. Tell the audience that the session is 
 - Curious by habit
 
 <!--
-Give the audience enough personal context to understand your point of view. Explain that coming from outside computer science made you pay close attention to how people learn systems. Connect that perspective to technical writing as a practice of making expert knowledge usable.
+Give enough personal context to explain your point of view. Connect the non-CS background to technical writing as a practice of making expert knowledge usable.
 -->
 
 ---
 
-## The case: TravelCo partner onboarding
+<!-- _class: lead section-divider -->
+
+<div class="section-kicker">1 / Messy input</div>
+
+## TravelCo partner onboarding
 
 A new partner needs to connect, configure, test, and go live.
 
+<div class="section-rule"></div>
+
 <!--
-Introduce TravelCo as the running example for the rest of the deck. Explain the partner's goal in practical terms: integrate with Booking.com, understand requirements, and complete onboarding without unnecessary back-and-forth. Keep the setup realistic, with enough detail to make later problems feel familiar.
+Introduce TravelCo as the running example. The partner's goal is practical: connect, configure, test, and go live without chasing answers across teams.
 -->
 
 ---
@@ -288,7 +328,7 @@ Introduce TravelCo as the running example for the rest of the deck. Explain the 
 "What do we need to do next?"
 
 <!--
-Make the question sound simple on purpose. Explain that partners often ask direct workflow questions, while organizations answer with scattered fragments. Use this moment to show the gap between how users think and how internal knowledge is organized.
+Make the question sound simple on purpose. Use it to show the gap between how readers think and how internal knowledge is often organized.
 -->
 
 ---
@@ -305,7 +345,7 @@ Make the question sound simple on purpose. Explain that partners often ask direc
 </div>
 
 <!--
-Walk through the source board as the messy input for the case study. Explain that none of these fragments are bad by themselves, but together they create a maze: recent behavior in GitLab, stale guidance in Confluence, unclear spreadsheet ownership, a Slack exception, an old PDF, and one person's memory. Tie the pain back to the partner who needs one next step, not a tour of internal history.
+Walk through the source board as the messy input. None of these fragments are bad by themselves, but together they create a maze for a partner who only needs the next step.
 -->
 
 ---
@@ -315,7 +355,7 @@ Walk through the source board as the messy input for the case study. Explain tha
 Published pages are not the same thing as a reliable source of truth.
 
 <!--
-Separate the existence of documentation from the reliability of documentation. Explain how a page can look official while being incomplete, stale, or disconnected from the teams that own the behavior. Use the case study to show why readers need confidence, not just content.
+Separate the existence of documentation from the reliability of documentation. A page can look official while being incomplete, stale, or disconnected from the team that owns the behavior.
 -->
 
 ---
@@ -327,7 +367,7 @@ Separate the existence of documentation from the reliability of documentation. E
 - Writers become detectives
 
 <!--
-Describe the human cost before the business cost. Explain how unclear docs shift effort onto partners, support engineers, account managers, and writers. Keep the focus on frustration, rework, and the feeling of not knowing which answer to trust.
+Describe the human cost before the business cost. Unclear docs shift effort onto partners, support engineers, account managers, and writers.
 -->
 
 ---
@@ -339,7 +379,7 @@ Describe the human cost before the business cost. Explain how unclear docs shift
 - Riskier releases
 
 <!--
-Translate the same problem into company impact. Explain that scattered truth creates operational drag because every unclear answer becomes a conversation, escalation, or delay. Tie the point to TravelCo taking longer to go live.
+Translate the same problem into company impact. Every unclear answer becomes a conversation, escalation, or delay, and TravelCo takes longer to go live.
 -->
 
 ---
@@ -351,12 +391,14 @@ Translate the same problem into company impact. Explain that scattered truth cre
 Pages are the visible part. Decisions, owners, and signals make them work.
 
 <!--
-Land the first section with a clear mental model. Explain that good docs are not only words on pages; they are the product of source management, ownership, review, and structure. Use the TravelCo example to show that the system behind the page determines whether the page can be trusted.
+Land the first section with a clear mental model. Good docs are not only words on pages; they are the product of source management, ownership, review, and structure.
 -->
 
 ---
 
-<!-- _class: dense question-checklist -->
+<!-- _class: section-open question-checklist -->
+
+<div class="section-kicker">2 / Better questions</div>
 
 ## Better questions
 
@@ -368,7 +410,7 @@ Land the first section with a clear mental model. Explain that good docs are not
 | Where does the current truth live? | What can we delete or archive? |
 
 <!--
-Transition from diagnosing the problem to a practical working method. Explain that better docs start with better discovery questions. Tell the audience this checklist reduces ambiguity before anyone starts drafting and keeps the later review focused on truth, risk, and maintenance.
+Transition from diagnosing the problem to a practical working method. This checklist reduces ambiguity before drafting and keeps review focused on truth, risk, and maintenance.
 -->
 
 ---
@@ -378,7 +420,7 @@ Transition from diagnosing the problem to a practical working method. Explain th
 Primary reader: TravelCo integration lead.
 
 <!--
-Explain why "the user" is too broad to guide useful documentation. In the case study, name the primary reader and describe what they know, what they do not know, and what pressure they are under. Show that audience decisions shape vocabulary, examples, and depth.
+Explain why "the user" is too broad to guide useful documentation. Audience decisions shape vocabulary, examples, and depth.
 -->
 
 ---
@@ -388,7 +430,7 @@ Explain why "the user" is too broad to guide useful documentation. In the case s
 Task: complete partner onboarding with the fewest unknowns.
 
 <!--
-Move from audience identity to audience intent. Explain that the page should support a task, not merely describe a system. Use TravelCo onboarding to show how task framing creates a clearer sequence of actions and decisions.
+Move from audience identity to audience intent. The page should support a task, not merely describe a system.
 -->
 
 ---
@@ -398,7 +440,7 @@ Move from audience identity to audience intent. Explain that the page should sup
 Sources: product behavior, API contracts, owner knowledge, release notes.
 
 <!--
-Explain that writers need to identify authoritative sources before writing. In the case study, distinguish between places where people discuss onboarding and places where truth is maintained. Make the practical point that source quality determines doc quality.
+Explain that writers need to identify authoritative sources before writing. Distinguish between places where people discuss onboarding and places where truth is maintained.
 -->
 
 ---
@@ -408,7 +450,7 @@ Explain that writers need to identify authoritative sources before writing. In t
 Owner: the team accountable for the behavior and the promise.
 
 <!--
-Explain that ownership keeps documentation from becoming an orphaned snapshot. Use the TravelCo flow to show how each requirement or step needs a team that can confirm it, change it, and answer for it. Emphasize that writers coordinate ownership but cannot replace it.
+Explain that ownership keeps documentation from becoming an orphaned snapshot. Writers coordinate ownership, but they cannot replace it.
 -->
 
 ---
@@ -418,7 +460,7 @@ Explain that ownership keeps documentation from becoming an orphaned snapshot. U
 Change signal: new behavior, new risk, new reader confusion, new support trend.
 
 <!--
-Explain that change is where documentation quietly breaks. In the case study, a requirement, API field, or onboarding policy can shift while the page stays still. Show why writers need signals that tell them when to revisit the docs.
+Explain that change is where documentation quietly breaks. Writers need signals that tell them when a requirement, API field, or onboarding policy has moved.
 -->
 
 ---
@@ -430,19 +472,23 @@ Explain that change is where documentation quietly breaks. In the case study, a 
 Discovery is documentation work.
 
 <!--
-Wrap the questions section by validating the invisible work. Explain that asking, mapping, and confirming are not delays before writing; they are how useful writing becomes possible. Connect this back to TravelCo receiving a cleaner path because the team did the discovery first.
+Validate the invisible work. Asking, mapping, and confirming are not delays before writing; they are how useful writing becomes possible.
 -->
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead section-divider -->
+
+<div class="section-kicker">3 / Better structure</div>
 
 ## Better structure
 
 Turn scattered answers into a map readers can follow.
 
+<div class="section-rule"></div>
+
 <!--
-Introduce structure as the next layer of usefulness. Explain that once the sources and owners are known, the writer can decide what belongs together and what belongs somewhere else. Keep the transition focused on reducing cognitive load for the partner.
+Introduce structure as the next layer of usefulness. Once sources and owners are known, the writer can decide what belongs together and what belongs somewhere else.
 -->
 
 ---
@@ -452,7 +498,7 @@ Introduce structure as the next layer of usefulness. Explain that once the sourc
 Inventory the fragments before choosing the page shape.
 
 <!--
-Explain the move from collecting sources to organizing them. In the TravelCo case, show that emails, API docs, tickets, and notes each contain different kinds of information. The speaker should make clear that mapping prevents the final page from simply mirroring internal mess.
+Explain the move from collecting sources to organizing them. Mapping prevents the final page from simply mirroring the internal mess.
 -->
 
 ---
@@ -489,7 +535,7 @@ Explain the move from collecting sources to organizing them. In the TravelCo cas
 <div class="map-lesson">The map is not a dumping ground. Every fragment gets a decision.</div>
 
 <!--
-Walk through the map as an editorial decision tool, not a final navigation menu. Explain that the visible slide shows the key decision for each fragment so the audience can read it from the back of the room.
+Walk through the map as an editorial decision tool, not a final navigation menu. The visible slide shows the key decision for each fragment so the audience can read it from the back of the room.
 
 Full docs map:
 Source | What it explains | Audience | Owner | Freshness | Action
@@ -536,7 +582,7 @@ Human memory | Removed step | Writers | Engineer | Current | Link as supporting 
 </div>
 
 <!--
-Use this zoom slide to show the columns behind the overview: Source, What it explains, Audience, Owner, Freshness, and Action. Explain that every row in the full map answers the same questions, but the live slide does not need to show every row and column at once.
+Use this zoom slide to show the columns behind the overview: Source, What it explains, Audience, Owner, Freshness, and Action. Every row answers the same questions, but the live slide does not need every row and column at once.
 -->
 
 ---
@@ -546,7 +592,7 @@ Use this zoom slide to show the columns behind the overview: Source, What it exp
 Every fragment needs a content decision.
 
 <!--
-Explain that structure requires editorial judgment. Use the case study to show examples of information that should be merged into a guide, moved to API reference, rewritten for clarity, or deleted because it no longer serves the task. Emphasize that deletion is part of making docs useful.
+Explain that structure requires editorial judgment. Information can be merged, moved, rewritten, or deleted; deletion is part of making docs useful.
 -->
 
 ---
@@ -556,7 +602,7 @@ Explain that structure requires editorial judgment. Use the case study to show e
 Design the page around the reader's next decision.
 
 <!--
-Explain how the docs map becomes an actual page. In the TravelCo example, each section should help the partner answer "Can I continue, or do I need something first?" Make the point that page structure should reduce hesitation.
+Explain how the docs map becomes an actual page. Each section should help the partner answer "Can I continue, or do I need something first?"
 -->
 
 ---
@@ -568,7 +614,7 @@ To set up a partner account, first make sure the partner is active and that all 
 </div>
 
 <!--
-Describe how this page technically contains information but still fails the reader. It hides prerequisites, mixes setup with troubleshooting, names no owner, and points people toward Slack instead of a durable answer. Keep this as a setup for the better page rather than a long critique.
+Describe how this page technically contains information but still fails the reader. It hides prerequisites, mixes setup with troubleshooting, names no owner, and points people toward Slack instead of a durable answer.
 -->
 
 ---
@@ -609,7 +655,7 @@ Describe how this page technically contains information but still fails the read
 </div>
 
 <!--
-Show what better structure looks like in the same case. Explain that this is a rendered-page mockup, not raw Markdown source. The slide compresses some line wording for live readability, while the complete model remains in these notes.
+Show what better structure looks like in the same case. This is a rendered-page mockup, not raw Markdown source. The slide compresses some line wording for live readability, while the complete model remains in these notes.
 
 Full improved page model:
 # Set up a partner sandbox account
@@ -659,7 +705,7 @@ Use this guide when a new travel partner needs sandbox access before production 
 </div>
 
 <!--
-Use this zoom slide to make the design lesson explicit after the page mockup. The improved page works because it starts with the task, shows prerequisites early, separates setup from verification, and ends with ownership and freshness signals.
+Use this zoom slide to make the design lesson explicit. The improved page works because it starts with the task, separates setup from verification, and ends with ownership and freshness signals.
 -->
 
 ---
@@ -671,19 +717,23 @@ Use this zoom slide to make the design lesson explicit after the page mockup. Th
 Good structure saves readers from doing your sorting work.
 
 <!--
-Close the structure section with the human reason for organizing content. Explain that every clear heading, sequence, and boundary removes work from the reader. Use TravelCo to show that structure can make the difference between progress and another support ticket.
+Close the structure section with the human reason for organizing content. Every clear heading, sequence, and boundary removes work from the reader.
 -->
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead section-divider -->
+
+<div class="section-kicker">4 / Better trust</div>
 
 ## Better trust
 
 Readers need signals that the page is safe to use.
 
+<div class="section-rule"></div>
+
 <!--
-Transition from structure to trust. Explain that a well-structured page still fails if readers cannot tell whether it is current, reviewed, and owned. In the case study, trust determines whether TravelCo follows the docs or asks for confirmation elsewhere.
+Transition from structure to trust. A well-structured page still fails if readers cannot tell whether it is current, reviewed, and owned.
 -->
 
 ---
@@ -697,7 +747,7 @@ Transition from structure to trust. Explain that a well-structured page still fa
 - Next escalation path
 
 <!--
-Explain the practical signals that help readers judge a page. Tie each signal to a question TravelCo might ask before acting on onboarding instructions. Keep the message grounded: trust signals do not need to be fancy, but they need to be visible and true.
+Explain the practical signals that help readers judge a page before acting on it. Trust signals do not need to be fancy, but they need to be visible and true.
 -->
 
 ---
@@ -707,7 +757,7 @@ Explain the practical signals that help readers judge a page. Tie each signal to
 A review process is a promise with names attached.
 
 <!--
-Explain how review and ownership turn documentation into a maintained artifact. Use the partner onboarding flow to show why review needs the right subject-matter experts, not just a general approval. Emphasize that ownership should survive the initial publication moment.
+Explain how review and ownership turn documentation into a maintained artifact. Review needs the right subject-matter experts, not just a general approval.
 -->
 
 ---
@@ -717,7 +767,7 @@ Explain how review and ownership turn documentation into a maintained artifact. 
 Old content should say what it is, where to go, and when it stops applying.
 
 <!--
-Explain that stale pages are especially dangerous when they still look official. In the TravelCo case, outdated setup steps can cause failed tests or support escalations. Show how freshness notes and deprecation paths preserve reader confidence even when content changes.
+Explain that stale pages are especially dangerous when they still look official. Freshness notes and deprecation paths preserve reader confidence even when content changes.
 -->
 
 ---
@@ -729,19 +779,23 @@ Explain that stale pages are especially dangerous when they still look official.
 If no one maintains the signal, the signal becomes noise.
 
 <!--
-Close the trust section by naming the cost honestly. Explain that review dates, owners, and deprecation notices require maintenance, but the alternative is silent decay. Tie the point back to the partner who needs to know whether the page can guide real decisions.
+Name the cost honestly. Review dates, owners, and deprecation notices require maintenance, but the alternative is silent decay.
 -->
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead section-divider -->
+
+<div class="section-kicker">5 / Better AI</div>
 
 ## Better AI
 
 AI can use docs better when docs are already structured for people.
 
+<div class="section-rule"></div>
+
 <!--
-Transition into AI without treating it as magic. Explain that AI does not remove the need for reliable documentation; it amplifies the value of structure, ownership, and clear source boundaries. Keep TravelCo in view as the reader whose questions may now pass through an assistant.
+Transition into AI without treating it as magic. AI does not remove the need for reliable documentation; it amplifies the value of structure, ownership, and clear source boundaries.
 -->
 
 ---
@@ -757,7 +811,7 @@ Transition into AI without treating it as magic. Explain that AI does not remove
 7. Add metadata, source links, ownership, and freshness signals.
 
 <!--
-Describe a practical AI-assisted workflow for the onboarding case. Explain that Claude can help process fragments, reveal gaps, propose structure, and draft from verified inputs, but the team still has to validate truth. Keep the workflow concrete enough that the audience can try it after the talk.
+Describe a practical AI-assisted workflow for the onboarding case. Claude can process fragments, reveal gaps, propose structure, and draft from verified inputs, but the team still has to validate truth.
 -->
 
 ---
@@ -767,7 +821,7 @@ Describe a practical AI-assisted workflow for the onboarding case. Explain that 
 AI can help you move faster through the mess, but it cannot decide what is true unless the sources and humans around it make truth visible.
 
 <!--
-Set a clear boundary around AI usefulness. In the TravelCo example, AI can notice that a prerequisite appears in one source but not another, but it cannot decide which source is authoritative. Emphasize that verification remains a human and organizational responsibility.
+Set a clear boundary around AI usefulness. AI can notice that a prerequisite appears in one source but not another, but it cannot decide which source is authoritative.
 -->
 
 ---
@@ -777,7 +831,7 @@ Set a clear boundary around AI usefulness. In the TravelCo example, AI can notic
 Good retrieval depends on clean boundaries and useful labels.
 
 <!--
-Explain chunking and metadata in accessible terms. Use the onboarding docs map to show how sections like requirements, setup, and troubleshooting make better retrieval units than one long mixed page. Connect metadata to reader and agent trust: scope, owner, version, and freshness help the right answer surface.
+Explain chunking and metadata in accessible terms. Sections like requirements, setup, and troubleshooting make better retrieval units than one long mixed page.
 -->
 
 ---
@@ -787,7 +841,7 @@ Explain chunking and metadata in accessible terms. Use the onboarding docs map t
 If a human can scan it, an assistant can often retrieve it better.
 
 <!--
-Explain that agent-friendly docs start with human-friendly structure. In the case study, clear headings, explicit prerequisites, and stable terminology help both TravelCo and AI tools find the right answer. Avoid promising automation; focus on disciplined content design.
+Explain that agent-friendly docs start with human-friendly structure. Clear headings, explicit prerequisites, and stable terminology help both TravelCo and AI tools find the right answer.
 -->
 
 ---
@@ -799,7 +853,7 @@ Explain that agent-friendly docs start with human-friendly structure. In the cas
 Better inputs make better assistance possible.
 
 <!--
-Close the AI section by returning to fundamentals. Explain that AI raises the stakes for source quality because messy docs become messy answers at scale. Tie the point back to the same practices already covered: audience, task, truth, ownership, change, structure, and trust.
+Close the AI section by returning to fundamentals. AI raises the stakes for source quality because messy docs become messy answers at scale.
 -->
 
 ---
@@ -815,7 +869,7 @@ Close the AI section by returning to fundamentals. Explain that AI raises the st
 5. Maintain the signal
 
 <!--
-Summarize the talk as a short practical checklist. Explain each rule quickly through the TravelCo case so it feels actionable rather than abstract. Make this slide the memory aid the audience can carry back to their own docs.
+Summarize the talk as a short practical checklist. Make this slide the memory aid the audience can carry back to their own docs.
 -->
 
 ---
@@ -828,7 +882,7 @@ Summarize the talk as a short practical checklist. Explain each rule quickly thr
 - Ask one better review question
 
 <!--
-Give the audience a small next action instead of a giant documentation transformation. Explain that one page is enough to start practicing the method. Tie the action back to the partner onboarding story: choose a page where a real reader needs a real next step.
+Give the audience a small next action instead of a giant documentation transformation. One page is enough to start practicing the method.
 -->
 
 ---
@@ -848,5 +902,5 @@ GitHub: [marcospinello](https://github.com/marcospinello)
 Bandcamp: [Be-Style EP](https://spinello-band.bandcamp.com/album/be-style)
 
 <!--
-Invite questions and make space for practical discussion. Encourage people to bring up their own messy docs examples, especially places where truth is split across teams or tools. Close by reinforcing that useful docs are built through curiosity, structure, and maintenance.
+Invite questions and make space for practical discussion. Close by reinforcing that useful docs are built through curiosity, structure, and maintenance.
 -->
